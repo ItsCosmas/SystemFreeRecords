@@ -1,7 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_AddMedia.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_AddUser.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_Dashboard.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_Home.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_Login.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_MarkFeaturedMedia.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/FXML_UserManagement.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/JFXML_LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/0b5fa56c6036dbe2bdfe40976c1e29cf.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/10cd18bbee0c3375571740df91db8139.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/1305a402ce8bc5f2493d724d9270c32d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/2017-01-creative-logo-designs-01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/252ea20ff90ec7fcad703d8ccd3212bc.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/31e3b61fe7e0ab162ea80851ed67a93f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/37d9684c6ac50efa1b50a4806fd34dae.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/39482fa58db634e28249a3b44cc3c236.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/4328e56188233753a430948768221f1e.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/483be4e65104265a8566ddc5027aeef8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/4c13694269639257737c0652d106f7b4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/4f9437d0237dcad6d2c1e20a1417746d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/521fd8bb0ce0ba8e3837dbc8c1110d17.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/52483f070604c294c21eb4c5554a7211.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/53b784e425954a120ee52b82e60bd076.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/55.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/559265a4c1c513fffc97bffda9d1093d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/560810c16ae70af96b75b7dd51fef9de.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/59b8756a2a3de5baf1473d766671c40a.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/5f7ab826bdb3940d6fa17d983c417019.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/6156-200.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/644060acb47b4873445d0655cd0ea372.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/6b922418ae61b5821b79f640bb37743d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/6c29a2213e472c455e968c6671d11b0f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/799780a381f9c0b9532b4ab2c4af29c5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/7d8fa489644ad6c5d47ee5d23e4d2651.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/7d959b8859c4f62248e10103df635e37.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/842de9e39c7073230f89feb3d6843025.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/8f55ff6c525f15aec30c5002746d17ec.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/8fae69f1357206c2386b0af41c75864b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/94be1c40d3d5642dc501ed6943083c2e.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/99412a03aacea6f711f316be2b3ee82f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/9f70fa48cbc07c3401afa86369c999e6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/DSC_0056.JPG" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/Icon_58-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/Tick_Mark_Dark-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/basic1-112_user_add_new-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/bcab0162b4891f95fc9dac1e25120024.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/bell-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/bf65eccbbcdb8d9df5d960d0fce264eb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/bf913cc1d5caad885a1962c890ac3d21.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/c571ca15f078cc2002a3041ec66c9de6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/c73da4fc04a4f3d807e6e667944878fb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/dded9f46f74a1f87306d8027c8c41a70.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/deb039585fdf5596acc58ca9f258228b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/doodleFaceM_forGame_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/download.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/e25230429e4fad3ea26f5452c6015293.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/email-new-message-notification-notify-envelope-364d20eb4758ee28-512x512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ff20c1aa95c914c38fca86f8485bb8b2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/fvlogo-long-shadow_1x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_attach_file_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_attach_money_black_24dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_border_color_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_cloud_upload_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_folder_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_insert_comment_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_insert_emoticon_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_insert_photo_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_keyboard_arrow_left_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_keyboard_arrow_right_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_keyboard_backspace_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_local_offer_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_mode_edit_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_star_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_star_border_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_star_half_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/ic_whatshot_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/images (1).png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/images5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/img_316131.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/logo-designs-creative-logo-designs-for-inspiration-31-logos-graphic-design-free.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/rebecca-hunter-london-skyline_0.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/SystemFreeRecords/sample/images/security-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_AddMedia.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_AddUser.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_Dashboard.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_Home.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_Login.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_MarkFeaturedMedia.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML_UserManagement.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/JFXML_LoginController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/0b5fa56c6036dbe2bdfe40976c1e29cf.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/10cd18bbee0c3375571740df91db8139.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/1305a402ce8bc5f2493d724d9270c32d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/2017-01-creative-logo-designs-01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/252ea20ff90ec7fcad703d8ccd3212bc.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/31e3b61fe7e0ab162ea80851ed67a93f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/37d9684c6ac50efa1b50a4806fd34dae.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/39482fa58db634e28249a3b44cc3c236.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/4328e56188233753a430948768221f1e.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/483be4e65104265a8566ddc5027aeef8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/4c13694269639257737c0652d106f7b4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/4f9437d0237dcad6d2c1e20a1417746d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/521fd8bb0ce0ba8e3837dbc8c1110d17.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/52483f070604c294c21eb4c5554a7211.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/53b784e425954a120ee52b82e60bd076.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/55.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/559265a4c1c513fffc97bffda9d1093d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/560810c16ae70af96b75b7dd51fef9de.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/59b8756a2a3de5baf1473d766671c40a.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/5f7ab826bdb3940d6fa17d983c417019.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/6156-200.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/644060acb47b4873445d0655cd0ea372.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/6b922418ae61b5821b79f640bb37743d.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/6c29a2213e472c455e968c6671d11b0f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/799780a381f9c0b9532b4ab2c4af29c5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/7d8fa489644ad6c5d47ee5d23e4d2651.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/7d959b8859c4f62248e10103df635e37.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/842de9e39c7073230f89feb3d6843025.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/8f55ff6c525f15aec30c5002746d17ec.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/8fae69f1357206c2386b0af41c75864b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/94be1c40d3d5642dc501ed6943083c2e.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/99412a03aacea6f711f316be2b3ee82f.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/9f70fa48cbc07c3401afa86369c999e6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/DSC_0056.JPG" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/Icon_58-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/Tick_Mark_Dark-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/basic1-112_user_add_new-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/bcab0162b4891f95fc9dac1e25120024.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/bell-512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/bf65eccbbcdb8d9df5d960d0fce264eb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/bf913cc1d5caad885a1962c890ac3d21.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/c571ca15f078cc2002a3041ec66c9de6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/c73da4fc04a4f3d807e6e667944878fb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/dded9f46f74a1f87306d8027c8c41a70.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/deb039585fdf5596acc58ca9f258228b.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/doodleFaceM_forGame_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/download.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/e25230429e4fad3ea26f5452c6015293.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/email-new-message-notification-notify-envelope-364d20eb4758ee28-512x512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ff20c1aa95c914c38fca86f8485bb8b2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/fvlogo-long-shadow_1x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_attach_file_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_attach_money_black_24dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_border_color_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_cloud_upload_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_folder_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_insert_comment_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_insert_emoticon_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_insert_photo_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_keyboard_arrow_left_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_keyboard_arrow_right_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_keyboard_backspace_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_local_offer_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_mode_edit_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_star_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_star_border_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_star_half_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/ic_whatshot_black_36dp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/images (1).png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/images5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/img_316131.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/logo-designs-creative-logo-designs-for-inspiration-31-logos-graphic-design-free.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/rebecca-hunter-london-skyline_0.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/security-512.png" afterPath="" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,6 +191,18 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
@@ -64,53 +248,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="272">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="JFXML_LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXML_Home.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+      <file leaf-file-name="FXML_UserManagement.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_UserManagement.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+          <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FXML_Home.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="312" lean-forward="false" selection-start-line="11" selection-start-column="312" selection-end-line="11" selection-end-column="312" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FXML_Login.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
-          <provider editor-type-id="text-editor">
+        <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+          <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
         </entry>
@@ -121,6 +332,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -128,6 +340,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -139,15 +354,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/FXML_Home.fxml" />
         <option value="$PROJECT_DIR$/src/sample/FXML_UserManagement.fxml" />
         <option value="$PROJECT_DIR$/src/sample/FXML_AddUser.fxml" />
         <option value="$PROJECT_DIR$/src/sample/FXML_Dashboard.fxml" />
         <option value="$PROJECT_DIR$/src/sample/FXML_AddMedia.fxml" />
         <option value="$PROJECT_DIR$/src/sample/FXML_MarkFeaturedMedia.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML_Login.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/DBconnection.java" />
         <option value="$PROJECT_DIR$/src/sample/JFXML_LoginController.java" />
+        <option value="$PROJECT_DIR$/src/SysFree/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/FXML_Home.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/SysFreeManager/Main.java" />
       </list>
     </option>
   </component>
@@ -164,9 +382,7 @@
     <option name="width" value="1378" />
     <option name="height" value="780" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -198,16 +414,16 @@
               <item name="SystemFreeRecords" type="b2602c69:ProjectViewProjectNode" />
               <item name="SystemFreeRecords" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="SysFreeManager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,6 +438,8 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="data&#9;ACTION&#9;ActivateDatabaseToolWindow" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -252,11 +470,11 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="SysFreeManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="SysFreeManager.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -380,11 +598,16 @@
       <workItem from="1522179697389" duration="138000" />
       <workItem from="1522180022658" duration="255000" />
       <workItem from="1522230495371" duration="2386000" />
+      <workItem from="1522237608449" duration="867000" />
+      <workItem from="1522265084412" duration="1426000" />
+      <workItem from="1522309547096" duration="4867000" />
+      <workItem from="1522351440827" duration="703000" />
+      <workItem from="1522352819126" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11849000" />
+    <option name="totallyTimeSpent" value="19741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -392,27 +615,26 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32637855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -420,6 +642,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966226" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -436,6 +659,7 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -446,398 +670,373 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/application/Application.java">
@@ -847,101 +1046,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_UserManagement.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_AddUser.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_AddUser.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="45" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_MarkFeaturedMedia.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_MarkFeaturedMedia.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_AddMedia.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_AddMedia.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Dashboard.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Dashboard.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginhome.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeafterlogin.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77b0f01c-f0e0-4789-871b-1045df6e7994/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DBconnection.java" />
+    <entry file="uml://DATABASE/77b0f01c-f0e0-4789-871b-1045df6e7994.SCHEMA:sakila">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>77b0f01c-f0e0-4789-871b-1045df6e7994.SCHEMA:sakila</OriginalElement>
+          <nodes>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.actor</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.film_category</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.film_text</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.inventory</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.staff</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.film</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.customer</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.category</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.country</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.actor_info</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.store</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.nicer_but_slower_film_list</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.sales_by_store</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.payment</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.city</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.rental</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.film_list</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.address</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.language</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.customer_list</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.TABLE:sakila.film_actor</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.staff_list</node>
+            <node x="" y="">77b0f01c-f0e0-4789-871b-1045df6e7994.VIEW:sakila.sales_by_film_category</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0999999999999999" x="245.0" y="-75.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/FXMLUserManagement.java" />
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Home.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML_Login.fxml">
-      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JFXML_LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_Home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="312" lean-forward="false" selection-start-line="11" selection-start-column="312" selection-end-line="11" selection-end-column="312" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/FXML_UserManagement.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/JFXML_LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1522352074849" expanded="true" signature="271:272" ph="//..." />
           </folding>
         </state>
       </provider>

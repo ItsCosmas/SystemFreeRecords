@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.AddMedia">
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.AddMedia">
    <children>
       <Pane prefHeight="500.0" prefWidth="214.0" style="-fx-background-color: #FAD7A0;">
          <children>
@@ -30,10 +30,10 @@
                   <Image url="@../images/55.png" />
                </image>
             </ImageView>
-            <Button id="btnuserManagement" layoutX="69.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
-            <Button id="btnaddUser" layoutX="73.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
-            <Button id="btndashboard" layoutX="68.0" layoutY="202.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-            <Button id="btnaddMedia" layoutX="68.0" layoutY="241.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+            <Button id="btnuserManagement" layoutX="69.0" layoutY="117.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
+            <Button id="btnaddUser" layoutX="73.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
+            <Button id="btndashboard" layoutX="68.0" layoutY="202.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+            <Button id="btnaddMedia" layoutX="68.0" layoutY="241.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
             <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="26.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
@@ -68,6 +68,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="578.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Home" />
+      <Button layoutX="578.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
    </children>
 </AnchorPane>

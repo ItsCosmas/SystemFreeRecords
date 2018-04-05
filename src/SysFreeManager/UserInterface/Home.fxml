@@ -27,10 +27,10 @@
             <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="12.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../images/55.png" />
             </ImageView>
-            <Button id="btnuserManagement" layoutX="59.0" layoutY="85.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
-            <Button id="btnaddUser" layoutX="63.0" layoutY="127.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
-            <Button id="btndashboard" layoutX="58.0" layoutY="170.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-            <Button id="btnaddMedia" layoutX="58.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+            <Button id="btnuserManagement" fx:id="btnUserManagement" layoutX="59.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
+            <Button id="btnaddUser" fx:id="btnAddUser" layoutX="63.0" layoutY="127.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
+            <Button id="btndashboard" fx:id="btnDashboard" layoutX="58.0" layoutY="170.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+            <Button id="btnaddMedia" fx:id="btnAddMedia" layoutX="58.0" layoutY="209.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
             <Separator layoutX="210.0" orientation="VERTICAL" prefHeight="472.0" prefWidth="0.0" />
             <Label layoutX="24.0" layoutY="35.0" text="Administration">
                 <font>
@@ -46,7 +46,7 @@
                     <Image url="@../images/doodleFaceM_forGame_2.png" />
                 </ImageView>
                 <Label id="lbluserName" layoutX="321.0" layoutY="12.0" text="Joe" textFill="WHITE" />
-                <Button id="btnlogOut" layoutX="372.0" layoutY="41.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Log Out" />
+                <Button id="btnlogOut" layoutX="372.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #5DADE2;" text="Log Out" />
                 <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="402.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                     <Image url="@../images/bell-512.png" />
                 </ImageView>

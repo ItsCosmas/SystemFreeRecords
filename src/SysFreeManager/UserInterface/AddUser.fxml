@@ -30,7 +30,7 @@
       <Image url="@../images/55.png" />
    </ImageView>
    <Button id="btnuserManagement" layoutX="79.0" layoutY="105.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
-   <Button id="btnaddUser" layoutX="83.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
+   <Button id="btnaddUser" layoutX="83.0" layoutY="147.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
    <Button id="btndashboard" layoutX="78.0" layoutY="190.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
    <Button id="btnaddMedia" layoutX="78.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
    <Pane layoutX="229.0" layoutY="52.0" prefHeight="329.0" prefWidth="396.0" style="-fx-background-color: #ffae46;" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="52.0">

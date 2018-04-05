@@ -25,8 +25,8 @@ public class Home {
     }
 
 
-    @FXML
 
+    @FXML
     private void goToAddMedia(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/AddMedia.fxml"));

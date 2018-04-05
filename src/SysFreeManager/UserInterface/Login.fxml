@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="431.0" maxWidth="650.0" minHeight="431.0" minWidth="650.0" prefHeight="431.0" prefWidth="650.0" style="-fx-background-color: #20120f;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.LoginController">
+<AnchorPane id="AnchorPane" fx:id="loginAnchorPane" maxHeight="431.0" maxWidth="650.0" minHeight="431.0" minWidth="650.0" prefHeight="431.0" prefWidth="650.0" style="-fx-background-color: #20120f;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.LoginController">
    <ImageView fitHeight="439.0" fitWidth="664.0" pickOnBounds="true" preserveRatio="true" smooth="false">
       <image>
          <Image url="@../images/94be1c40d3d5642dc501ed6943083c2e.jpg" />

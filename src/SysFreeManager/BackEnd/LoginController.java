@@ -5,6 +5,7 @@ import SysFreeManager.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -42,9 +43,13 @@ public class LoginController {
             lblLoginWarning.setText(" \uD83D\uDE0E Correct Log In Details");
 
 
-            Parent home = FXMLLoader.load(getClass().getResource("UserInterface/Home.fxml"));
-            stage.setScene(new Scene(home));
-            stage.show();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
+            Parent home = loader.load();
+            Scene home_scene = new Scene(home);
+            Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            home_stage.setScene(home_scene);
+            home_stage.show();
             // btnLogin.setonAction(e -> window.setScene(scene2));
 
         }else {

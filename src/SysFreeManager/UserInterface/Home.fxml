@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="472.0" maxWidth="650.0" minHeight="472.0" minWidth="650.0" prefHeight="472.0" prefWidth="650.0" style="-fx-pref-height: 472px; -fx-border-width: 650px; -fx-max-height: 472px; -fx-max-width: 650px;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.Home">
+<AnchorPane id="AnchorPane" fx:id="homeAnchorPane" maxHeight="472.0" maxWidth="650.0" minHeight="472.0" minWidth="650.0" prefHeight="472.0" prefWidth="650.0" style="-fx-pref-height: 472px; -fx-border-width: 650px; -fx-max-height: 472px; -fx-max-width: 650px;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.Home">
     <ImageView fitHeight="399.0" fitWidth="622.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../images/ff20c1aa95c914c38fca86f8485bb8b2.jpg" />
     </ImageView>

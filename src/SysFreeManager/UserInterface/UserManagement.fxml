@@ -8,40 +8,49 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="472.0" prefWidth="792.0" style="-fx-background-color: #FDEBD0;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.UserManagement">
+<AnchorPane prefHeight="472.0" prefWidth="792.0" style="-fx-background-color: #FDEBD0;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.UserManagement">
    <SplitPane prefHeight="472.0" prefWidth="207.0" style="-fx-background-color: #FAD7A0;" />
-   <TableView layoutX="214.0" layoutY="65.0" prefHeight="334.0" prefWidth="568.0">
-      <columns>
-         <TableColumn prefWidth="153.0" text="Full Names" />
-         <TableColumn prefWidth="111.0" text="Email" />
-         <TableColumn prefWidth="112.0" text="Phone" />
-         <TableColumn prefWidth="85.0" text="Id no." />
-         <TableColumn prefWidth="106.0" text="TotalPay" />
-      </columns>
-   </TableView>
-   <Button id="btnrefresh" layoutX="214.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #5DADE2;" text="Refresh" />
-   <Label layoutX="34.0" layoutY="38.0" text="Administration">
-      <font>
-         <Font size="18.0" />
-      </font>
-   </Label>
-   <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="27.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/img_316131.png" />
-   </ImageView>
-   <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="26.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
-   </ImageView>
-   <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="21.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/basic1-112_user_add_new-512.png" />
-   </ImageView>
-   <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="22.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/55.png" />
-   </ImageView>
-   <Button id="btnuserManagement" layoutX="69.0" layoutY="95.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
-   <Button id="btnaddUser" layoutX="73.0" layoutY="137.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
-   <Button id="btndashboard" layoutX="68.0" layoutY="180.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-   <Button id="btnaddMedia" layoutX="68.0" layoutY="219.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
-   <Button id="btnhome" layoutX="726.0" layoutY="26.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+   <Pane layoutX="214.0" layoutY="26.0">
+      <children>
+         <TableView layoutY="39.0" prefHeight="334.0" prefWidth="568.0">
+            <columns>
+               <TableColumn prefWidth="153.0" text="Full Names" />
+               <TableColumn prefWidth="111.0" text="Email" />
+               <TableColumn prefWidth="112.0" text="Phone" />
+               <TableColumn prefWidth="85.0" text="Id no." />
+               <TableColumn prefWidth="106.0" text="TotalPay" />
+            </columns>
+         </TableView>
+         <Button id="btnrefresh" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #5DADE2;" text="Refresh" />
+         <Button id="btnhome" layoutX="512.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+      </children>
+   </Pane>
+   <Pane layoutX="21.0" layoutY="38.0">
+      <children>
+         <Label layoutX="13.0" text="Administration">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="6.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/img_316131.png" />
+         </ImageView>
+         <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="5.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
+         </ImageView>
+         <ImageView fitHeight="33.0" fitWidth="35.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/basic1-112_user_add_new-512.png" />
+         </ImageView>
+         <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="1.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/55.png" />
+         </ImageView>
+         <Button id="btnuserManagement" layoutX="48.0" layoutY="57.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
+         <Button id="btnaddUser" layoutX="52.0" layoutY="99.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
+         <Button id="btndashboard" layoutX="47.0" layoutY="142.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+         <Button id="btnaddMedia" layoutX="47.0" layoutY="181.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+      </children>
+   </Pane>
 </AnchorPane>

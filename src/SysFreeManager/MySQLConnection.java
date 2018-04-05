@@ -21,12 +21,25 @@ public class MySQLConnection {
 
             //Execute SQL Query
 
-            ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM systemfreedb.admins");
+            //Uncommment this Section to add new user data
+            //String sqlInsert = "INSERT INTO systemfreedb.employee(employeeID,employeeFirstName,employeeLastName,employeeSecondName, employeeEmail , employeePhone ,employeeIdNumber) " +
+             //       " VALUES( 3 , 'Cozy' , 'DEV' ,'the' , 'cosmastheDEV@mail.co' , '+254704328791' ,341806954);";
+            //ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM systemfreedb.employee");
+
+           // myStatement.executeUpdate(sqlInsert);
+            //System.out.println("Insert Successful");
+
+            ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM  systemfreedb.employee");
 
             //Process the result set
 
             while (myResultSet.next()){
-                System.out.println(myResultSet.getString("secondName") + " " + myResultSet.getString("firstName"));
+             System.out.println(" Employee ID:" + myResultSet.getString("employeeID") + " \n Full names: " + myResultSet.getString("employeeFirstName") + " "
+            + myResultSet.getString("employeeSecondName") + " " + myResultSet.getString("employeeLastName") + ""
+                        + " \n Email: " + myResultSet.getString("employeeEmail")
+                        + " \n Phone: " + myResultSet.getString("employeePhone")
+                        + " \n Id number: " + myResultSet.getString("employeeIdNumber")
+                );
             }
 
         } catch (Exception e){

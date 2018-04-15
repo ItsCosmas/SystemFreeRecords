@@ -113,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -123,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterAdmin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegisterAdmin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/RegisterAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
+            <state relative-caret-position="589">
               <caret line="159" column="88" lean-forward="false" selection-start-line="159" selection-start-column="88" selection-end-line="159" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -555,7 +555,7 @@
       <workItem from="1523729891971" duration="1777000" />
       <workItem from="1523782129925" duration="2143000" />
       <workItem from="1523821287360" duration="201000" />
-      <workItem from="1523821603096" duration="137000" />
+      <workItem from="1523821603096" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the sample folder to SysFreeManager">
       <created>1522352907556</created>
@@ -641,11 +641,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523821714696</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Started on DashBoard and added switch scenes">
+      <created>1523821748531</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523821748531</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99704000" />
+    <option name="totallyTimeSpent" value="99862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1100,19 +1107,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/RegisterAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="159" column="88" lean-forward="false" selection-start-line="159" selection-start-column="88" selection-end-line="159" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523695014324" expanded="true" signature="4480:4674" ph="INSERT INTO systemfreedb.admins... " />
-            <marker date="1523695014324" expanded="true" signature="4486:4561" ph="insert into employee... " />
-            <marker date="1523695014324" expanded="true" signature="4486:4674" ph="insert into employee... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SysFreeManager/SqlLiteConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1158,6 +1152,19 @@
         <state relative-caret-position="153">
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/RegisterAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="159" column="88" lean-forward="false" selection-start-line="159" selection-start-column="88" selection-end-line="159" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523695014324" expanded="true" signature="4480:4674" ph="INSERT INTO systemfreedb.admins... " />
+            <marker date="1523695014324" expanded="true" signature="4486:4561" ph="insert into employee... " />
+            <marker date="1523695014324" expanded="true" signature="4486:4674" ph="insert into employee... " />
+          </folding>
         </state>
       </provider>
     </entry>

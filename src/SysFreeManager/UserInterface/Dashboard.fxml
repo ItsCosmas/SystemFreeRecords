@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="472.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.Dashboard">
+<AnchorPane prefHeight="499.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.Dashboard">
    <children>
-      <Pane prefHeight="500.0" prefWidth="214.0" style="-fx-background-color: #FAD7A0;">
+      <Pane prefHeight="499.0" prefWidth="213.0" style="-fx-background-color: #FAD7A0;">
          <children>
             <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="27.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,18 +29,32 @@
             </ImageView>
             <Button id="btnuserManagement" layoutX="69.0" layoutY="117.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
             <Button id="btnaddUser" layoutX="73.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
-            <Button id="btndashboard" layoutX="68.0" layoutY="202.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+            <Pane layoutX="14.0" layoutY="201.0" prefHeight="27.0" prefWidth="161.0" style="-fx-background-color: #ffe6e6;">
+               <children>
+                  <Button id="btndashboard" layoutX="48.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: #ffe6e6;" text="Dashboard" />
+                  <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
             <Button id="btnaddMedia" layoutX="68.0" layoutY="241.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
-            <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="26.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
-               </image>
-            </ImageView>
             <Label layoutX="27.0" layoutY="61.0" text="Administration">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="213.0" layoutY="65.0" prefHeight="216.0" prefWidth="270.0" style="-fx-background-color: #ffbf00;" />
+      <Pane layoutX="213.0" layoutY="282.0" prefHeight="216.0" prefWidth="270.0" style="-fx-background-color: #c39b22;" />
+      <Pane layoutX="484.0" layoutY="65.0" prefHeight="216.0" prefWidth="270.0" style="-fx-background-color: #c39b22;" />
+      <Pane layoutX="484.0" layoutY="282.0" prefHeight="216.0" prefWidth="270.0" style="-fx-background-color: #f9bc06;" />
+      <Pane layoutX="213.0" prefHeight="63.0" prefWidth="542.0" style="-fx-background-color: #283747;">
+         <children>
+            <Button id="btnlogOut" layoutX="458.0" layoutY="20.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #5DADE2;" text="Log Out" />
+            <Button layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
          </children>
       </Pane>
    </children>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
@@ -10,8 +11,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="472.0" prefWidth="650.0" style="-fx-background-color: #FDEBD0;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.AddUser">
-   <SplitPane layoutX="-1.0" prefHeight="477.0" prefWidth="214.0" style="-fx-background-color: #FAD7A0;" />
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #FDEBD0;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.AddUser">
+   <SplitPane layoutX="-1.0" prefHeight="500.0" prefWidth="214.0" style="-fx-background-color: #FAD7A0;" />
    <Label layoutX="44.0" layoutY="48.0" text="Administration">
       <font>
          <Font name="System Bold" size="18.0" />
@@ -23,35 +24,53 @@
    <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="36.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
    </ImageView>
-   <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="31.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/basic1-112_user_add_new-512.png" />
-   </ImageView>
+   <Pane layoutX="25.0" layoutY="143.0" prefHeight="33.0" prefWidth="158.0" style="-fx-background-color: #ffe6e6;">
+      <children>
+         <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/basic1-112_user_add_new-512.png" />
+         </ImageView>
+         <Button id="btnaddUser" layoutX="59.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: #ffe6e6;" text="Add User" />
+      </children>
+   </Pane>
    <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="32.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../images/55.png" />
    </ImageView>
    <Button id="btnuserManagement" layoutX="79.0" layoutY="105.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
-   <Button id="btnaddUser" layoutX="83.0" layoutY="147.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
    <Button id="btndashboard" layoutX="78.0" layoutY="190.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
    <Button id="btnaddMedia" layoutX="78.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
-   <Pane layoutX="229.0" layoutY="52.0" prefHeight="329.0" prefWidth="396.0" style="-fx-background-color: #ffae46;" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="52.0">
-      <Label layoutX="35.0" layoutY="25.0" text="First Name" />
-      <TextField layoutX="124.0" layoutY="21.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="33.0" layoutY="166.0" text="Email" />
-      <Label layoutX="35.0" layoutY="211.0" prefHeight="17.0" prefWidth="57.0" text="Phone" />
-      <Label layoutX="35.0" layoutY="257.0" text="Id  No." />
-      <TextField layoutX="124.0" layoutY="118.0" prefHeight="25.0" prefWidth="175.0" />
-      <TextField layoutX="124.0" layoutY="207.0" prefHeight="25.0" prefWidth="175.0" />
-      <TextField layoutX="124.0" layoutY="245.0" prefHeight="25.0" prefWidth="175.0" />
-      <TextField layoutX="124.0" layoutY="71.0" prefHeight="25.0" prefWidth="175.0" />
-      <TextField layoutX="124.0" layoutY="162.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="33.0" layoutY="75.0" text="Second Name" />
-      <Label layoutX="33.0" layoutY="122.0" text="Last Name" />
+   <Pane layoutX="223.0" layoutY="52.0" prefHeight="335.0" prefWidth="523.0" style="-fx-background-color: #ffae46;" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="52.0">
+      <Label layoutX="35.0" layoutY="56.0" text="First Name" />
+      <TextField layoutX="124.0" layoutY="52.0" prefHeight="25.0" prefWidth="286.0" />
+      <Label layoutX="35.0" layoutY="190.0" text="Email" />
+      <Label layoutX="37.0" layoutY="235.0" prefHeight="17.0" prefWidth="57.0" text="Phone" />
+      <Label layoutX="37.0" layoutY="281.0" text="Id  No." />
+      <TextField layoutX="126.0" layoutY="142.0" prefHeight="25.0" prefWidth="286.0" />
+      <TextField layoutX="204.0" layoutY="231.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField layoutX="126.0" layoutY="277.0" prefHeight="25.0" prefWidth="286.0" />
+      <TextField layoutX="126.0" layoutY="95.0" prefHeight="25.0" prefWidth="286.0" />
+      <TextField layoutX="126.0" layoutY="186.0" prefHeight="25.0" prefWidth="286.0" />
+      <Label layoutX="35.0" layoutY="99.0" text="Second Name" />
+      <Label layoutX="35.0" layoutY="146.0" text="Last Name" />
+      <Button layoutX="126.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" text="Choose Photo" />
+      <Label layoutX="52.0" layoutY="20.0" text="User Pic" />
+      <Label layoutX="312.0" layoutY="21.0" text="👨‍💻 Oops field under dev" textFill="RED" />
+      <Label layoutX="35.0" layoutY="14.0" prefHeight="21.0" prefWidth="14.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="126.0" layoutY="231.0" prefHeight="25.0" prefWidth="74.0" promptText="+254" />
    </Pane>
-   <Label layoutX="229.0" layoutY="14.0" text="Enter details of the new User Here">
+   <Label layoutX="223.0" layoutY="14.0" text="Enter details of the new User Here">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
    </Label>
-   <Pane layoutX="229.0" layoutY="384.0" prefHeight="72.0" prefWidth="396.0" style="-fx-background-color: #ffae46;" />
-   <Button layoutX="573.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+   <Pane layoutX="223.0" layoutY="391.0" prefHeight="102.0" prefWidth="523.0" style="-fx-background-color: #ffae46;">
+      <children>
+         <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #5DADE2;" text="Submit" />
+         <Button layoutX="444.0" layoutY="24.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #5DADE2;" text="Clear" />
+         <Button layoutX="162.0" layoutY="24.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #5DADE2;" text="Update" />
+      </children></Pane>
+   <Button layoutX="687.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
 </AnchorPane>

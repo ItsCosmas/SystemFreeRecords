@@ -13,6 +13,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("UserInterface/Login.fxml"));
         stage.setTitle("Free Management System");
+        //stage.setIconified(true);
         stage.setScene(new Scene(root));
         stage.setResizable(false);
         //stage.initStyle(StageStyle.UNDECORATED);

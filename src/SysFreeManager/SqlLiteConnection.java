@@ -1,4 +1,5 @@
-// Not Using SQL LITE
+/** Not Using SQL LITE
+ */
 package SysFreeManager;
 
 import java.sql.Connection;

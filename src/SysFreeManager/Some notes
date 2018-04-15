@@ -1,0 +1,110 @@
+//Create a statement
+
+            //Statement myStatement = myConn.createStatement();
+
+            //Execute SQL Query
+
+            //Uncommment this Section to add new user data
+            //String sqlInsert = "INSERT INTO systemfreedb.employee(employeeID,employeeFirstName,employeeLastName,employeeSecondName, employeeEmail , employeePhone ,employeeIdNumber) " +
+             //       " VALUES( 3 , 'Cozy' , 'DEV' ,'the' , 'cosmastheDEV@mail.co' , '+254704328791' ,341806954);";
+            //ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM systemfreedb.employee");
+
+           // myStatement.executeUpdate(sqlInsert);
+            //System.out.println("Insert Successful");
+
+           /* ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM  systemfreedb.employee");
+
+            //Process the result set
+
+            while (myResultSet.next()){
+             System.out.println(" Employee ID:" + myResultSet.getString("employeeID") + " \n Full names: " + myResultSet.getString("employeeFirstName") + " "
+            + myResultSet.getString("employeeSecondName") + " " + myResultSet.getString("employeeLastName") + ""
+                        + " \n Email: " + myResultSet.getString("employeeEmail")
+                        + " \n Phone: " + myResultSet.getString("employeePhone")
+                        + " \n Id number: " + myResultSet.getString("employeeIdNumber")
+                );
+            }*/
+
+
+ import SysFreeManager.Main;
+ import javafx.event.ActionEvent;
+ import javafx.fxml.FXML;
+ import javafx.fxml.FXMLLoader;
+ import javafx.scene.Node;
+ import javafx.scene.Parent;
+ import javafx.scene.control.Label;
+ import javafx.scene.control.PasswordField;
+ import javafx.scene.control.TextField;
+
+ import javafx.scene.Scene;
+ import javafx.stage.Stage;
+
+
+
+
+ public class LoginController {
+
+
+     @FXML
+     private Label lblLoginWarning;
+
+     @FXML
+     private TextField txtUsername;
+
+     @FXML
+     private PasswordField txtPassword;
+
+
+
+
+     @FXML
+     private Stage stage;
+
+     @FXML
+     private void Login(ActionEvent event) throws Exception{
+         //To Write log in code here
+
+         if (txtUsername.getText().equals("Cosmas") && txtPassword.getText().equals("punkcozy")){
+             lblLoginWarning.setText(" \uD83D\uDE0E Correct Log In Details");
+
+
+             FXMLLoader loader = new FXMLLoader();
+             loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
+             Parent home = loader.load();
+             Scene home_scene = new Scene(home);
+             Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+             home_stage.setScene(home_scene);
+             home_stage.show();
+             // btnLogin.setonAction(e -> window.setScene(scene2));
+
+         }else {
+             lblLoginWarning.setText(" \uD83D\uDE12 Invalid Log in Credentials");
+             }
+
+         }
+
+
+ }
+
+  /*@FXML
+     public void Login (ActionEvent event) throws IOException {
+
+             //		if (loginModel.isLogin(txtUsername.getText(), txtPassword.getText())){
+             if ((txtUsername.getText().equals("Cosmas") && txtPassword.getText().equals("punkcozy") || (txtUsername.getText().equals("admin") && txtPassword.getText().equals("admin"))
+                 *//* loginModel.isLogin(txtUsername.getText(),txtPassword.getText())*//*) ){
+                 lblLoginWarning.setText("Correct Login Credentials");
+                 lblLoginWarning.setStyle("-fx-text-fill: green");
+
+                 FXMLLoader loader = new FXMLLoader();
+                 loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
+                 Parent home = loader.load();
+                 Scene home_scene = new Scene(home);
+                 Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                 home_stage.setScene(home_scene);
+                 home_stage.show();
+
+
+             } else {
+                 lblLoginWarning.setText("\uD83D\uDE0F Username and/or Password is Incorrect");
+             }
+         }*/

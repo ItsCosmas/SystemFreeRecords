@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="431.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.RegisterAdmin">
+   <children>
+      <ImageView fitHeight="439.0" fitWidth="664.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/94be1c40d3d5642dc501ed6943083c2e.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="285.0" layoutY="11.0" prefHeight="409.0" prefWidth="357.0" style="-fx-background-color: #ffae46;">
+         <children>
+            <Label layoutX="38.0" layoutY="125.0" text="First Name" />
+            <TextField fx:id="txtFirstName" layoutX="144.0" layoutY="121.0" prefHeight="25.0" prefWidth="175.0" />
+            <Label layoutX="37.0" layoutY="234.0" text="Password" />
+            <Label layoutX="39.0" layoutY="273.0" prefHeight="17.0" prefWidth="103.0" text="Confirm Password" />
+            <TextField fx:id="txtUsername" layoutX="145.0" layoutY="192.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="txtSecondName" layoutX="145.0" layoutY="155.0" prefHeight="25.0" prefWidth="175.0" />
+            <Label layoutX="37.0" layoutY="159.0" text="Second Name" />
+            <Label layoutX="37.0" layoutY="196.0" text="Username" />
+            <PasswordField fx:id="txtPassword" layoutX="145.0" layoutY="230.0" prefHeight="25.0" prefWidth="175.0" />
+            <PasswordField fx:id="txtConfirmPassword" layoutX="145.0" layoutY="269.0" prefHeight="25.0" prefWidth="175.0" />
+            <Button layoutX="217.0" layoutY="362.0" mnemonicParsing="false" onAction="#Register" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #5DADE2;" text="Register" />
+            <Label layoutX="39.0" layoutY="34.0" text="Register as a new Admin User Here">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegError" layoutX="38.0" layoutY="324.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegSuccess" layoutX="61.0" layoutY="326.0" textFill="GREEN">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIsConnected" layoutX="40.0" layoutY="6.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button layoutX="145.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Choose Photo" />
+            <Label layoutX="56.0" layoutY="76.0" text="Admin Pic" />
+            <Label layoutX="142.0" layoutY="100.0" text="👨‍💻 Oops field under dev" textFill="RED" />
+            <Label layoutX="39.0" layoutY="70.0" prefHeight="21.0" prefWidth="14.0" text="*" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="24.0" layoutY="70.0" text="Freelance MGMT System" textFill="#e30f07">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="146.0" text="Welcome Enter Your Details to Login">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="176.0" text="This Production utility system helps keep " />
+      <Label layoutX="24.0" layoutY="204.0" text="and manage records sent by freelance Journalists" />
+      <Label layoutX="24.0" layoutY="226.0" text="around the country" />
+      <Button layoutX="37.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #5DADE2;" text="Goto Login" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="12.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ic_keyboard_arrow_left_black_36dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

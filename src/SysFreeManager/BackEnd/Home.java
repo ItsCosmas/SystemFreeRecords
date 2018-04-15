@@ -1,3 +1,12 @@
+/**
+ * To query the DB for current Admin User and display along with a welcome text
+ * To query the DB for number of Exclusive media stored
+ * To query the DB for Journalist who grossed the highest pay and display the pay along
+ * To query the DB for media item that grossed the highest pay and play the media in future release
+ * To give a monthly summary of the media items
+ *
+ * */
+
 package SysFreeManager.BackEnd;
 
 import javafx.event.ActionEvent;
@@ -23,6 +32,7 @@ public class Home {
         home_stage.setScene(home_scene);
         home_stage.show();
     }
+
 
 
 
@@ -75,5 +85,6 @@ public class Home {
         home_stage.show();
 
     }
+
 
 }

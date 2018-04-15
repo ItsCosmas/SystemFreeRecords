@@ -2,7 +2,7 @@ package SysFreeManager.BackEnd;
 
 import java.sql.*;
 
-import SysFreeManager.SqlLiteConnection;
+import SysFreeManager.MySQLConnection;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -17,7 +17,7 @@ public class LoginModel {
     private PasswordField txtPassword;
 
     public LoginModel (){
-        connection = SqlLiteConnection.dbConnector();
+        connection = MySQLConnection.dbConnector();
         if (connection == null) System.exit(1);
     }
 
@@ -34,16 +34,14 @@ public class LoginModel {
 
 
 
-
-
-    public boolean isLogin(String user, String pass) throws SQLException{
+    public boolean isLogin(String username, String password) throws SQLException{
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
-        String query = "select * from employee where username = ? and password = ?";
+        String query = "select * from systemfreedb.admins where username = ? and password = ?";
         try {
             preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1, user);
-            preparedStatement.setString(2, pass);
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, password);
 
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {

@@ -555,7 +555,7 @@
       <workItem from="1523729891971" duration="1777000" />
       <workItem from="1523782129925" duration="2143000" />
       <workItem from="1523821287360" duration="201000" />
-      <workItem from="1523821603096" duration="102000" />
+      <workItem from="1523821603096" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the sample folder to SysFreeManager">
       <created>1522352907556</created>
@@ -634,11 +634,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523821470324</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Started on DashBoard and added switch scenes">
+      <created>1523821714696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523821714696</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99669000" />
+    <option name="totallyTimeSpent" value="99704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

@@ -8,8 +8,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.sql.Connection;
@@ -20,23 +24,15 @@ import java.util.ResourceBundle;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class RegisterAdmin implements Initializable {
 
-    @FXML
-    private void goToLogin(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Login.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-
-    }
-
         public LoginModel loginModel = new LoginModel();
 
+
+        File file;
 
         @FXML
         private Label lblIsConnected;
@@ -63,6 +59,15 @@ public class RegisterAdmin implements Initializable {
         @FXML
         private Label lblRegSuccess;
 
+        @FXML
+        private ImageView profilePicture;
+
+        @FXML
+        private Stage stage;
+
+        private Image image;
+
+
 
         ResultSet resultSet;
         PreparedStatement preparedStatement;
@@ -71,7 +76,7 @@ public class RegisterAdmin implements Initializable {
 
 
         @Override
-        public void initialize(URL arg0, ResourceBundle arg1) {
+        public void initialize(URL Location, ResourceBundle resourceBundle) {
             // TODO Auto-generated method stub
             if (loginModel.isDBConnected()){
                 lblIsConnected.setText(" \uD83D\uDE07 You're Connected");
@@ -139,12 +144,27 @@ public class RegisterAdmin implements Initializable {
 
                     try{
 
-                        String finalpassword = passwordHash();
+                        FileInputStream fileInputStream = new FileInputStream(file);
+
+
+
+
+                        String finalPassword = passwordHash();
 
                         myConn = MySQLConnection.dbConnector(); // this is the database connection
-                        String SQL = "INSERT INTO systemfreedb.admins (firstName,secondName,username,password) values ('"+txtFirstName.getText()+"' , '"+txtSecondName.getText()+"' , '"+txtUsername.getText()+"' , '"+finalpassword+"')" ;
+                        String SQL = "INSERT INTO systemfreedb.admins SET adminPic = ?,firstName = ? ,secondName = ?,username = ? ,password = ?" ;
+
 
                         PreparedStatement preparedStatement = myConn.prepareStatement(SQL);
+
+
+                        //more options
+                        preparedStatement.setBlob(1,(InputStream)fileInputStream , (long) file.length() );
+                        preparedStatement.setString(2,txtFirstName.getText());
+                        preparedStatement.setString(3,txtSecondName.getText());
+                        preparedStatement.setString(4,txtUsername.getText());
+                        preparedStatement.setString(5,finalPassword);
+
 
                         preparedStatement.execute();
 
@@ -171,4 +191,54 @@ public class RegisterAdmin implements Initializable {
                 }
             }
         }
+
+
+    @FXML
+    private void goToLogin(ActionEvent event) throws Exception {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Login.fxml"));
+        Parent home = loader.load();
+        Scene home_scene = new Scene(home);
+        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        home_stage.setScene(home_scene);
+        home_stage.show();
+
+    }
+
+
+
+
+        //public void init(Stage stage){
+          //  this.stage = stage;
+        //}
+
+
+    @FXML
+        public void openFile(){
+            //System.out.println("Opening file");
+            FileChooser fileChooser = new FileChooser();
+
+            fileChooser.setTitle("Choose a Profile Picture");
+            fileChooser.getExtensionFilters().addAll(
+                    // To filter only specific image formats
+                    new FileChooser.ExtensionFilter("JPG Files","*.*"),
+                    new FileChooser.ExtensionFilter("PNG Files","*.*")
+            );
+
+
+
+            file = fileChooser.showOpenDialog(stage);
+
+            if (file != null){
+                //System.out.println("Chosen File: " + file);
+                image = new Image(file.toURI().toString());
+
+                //profilePicture = new ImageView(image);
+                profilePicture.setImage(image);
+
+
+            }
+
+        }
+
     }

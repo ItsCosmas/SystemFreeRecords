@@ -10,21 +10,28 @@
 package SysFreeManager.BackEnd;
 
 import SysFreeManager.MySQLConnection;
+import javafx.beans.property.DoubleProperty;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 import javafx.scene.media.Media;
+import javafx.beans.binding.Bindings;
 
+
+import javax.swing.text.html.ImageView;
 import java.io.InputStream;
+import java.io.File;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -53,6 +60,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        mediaPlayer.pause();
     }
 
 
@@ -67,6 +75,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        mediaPlayer.pause();
 
     }
 
@@ -79,6 +88,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        mediaPlayer.pause();
 
     }
 
@@ -92,6 +102,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        mediaPlayer.pause();
 
     }
 
@@ -105,6 +116,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        mediaPlayer.stop();
 
     }
 
@@ -114,27 +126,62 @@ public class Home implements Initializable {
 
     private MediaPlayer mediaPlayer;
 
+    private Media media;
 
-     //private static final String MEDIA_URL = "../Videos/OneRepublic - Kids.MP4";
-     //private static final String MEDIA_URL = "../Videos/PLO.MP4";
-     private static final String MEDIA_URL = "../Videos/Kisungu.MP4";
-     //private static final String MEDIA_URL = "../Videos/Electric.MP4";
-     //private static final String MEDIA_URL = "../Videos/Babu Owino.MP4";
+
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+      String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Babu Owino.MP4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Electric.MP4").getAbsolutePath();
+
 
 
 
     @Override
-    public void initialize(URL Location, ResourceBundle resourceBundle) {
+    public void initialize(URL Location, ResourceBundle resources) {
         // TODO Auto-generated method stub
 
-        mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
+        media = new Media(new File(MEDIA_URL).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
 
-        mediaPlayer.setAutoPlay(true);
-        mediaPlayer.setCycleCount(10);
+        //mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
+
+        //mediaPlayer.setAutoPlay(true);
+        //mediaPlayer.setCycleCount(10);
         //mediaPlayer.getAudioEqualizer();
 
         homeMedia.setMediaPlayer(mediaPlayer);
 
+//        Resize Video
+
+        //DoubleProperty width = homeMedia.fitWidthProperty();
+        //DoubleProperty height = homeMedia.fitHeightProperty();
+
+        //width.bind(Bindings.selectDouble(homeMedia.sceneProperty(), "width"));
+        //height.bind(Bindings.selectDouble(homeMedia.sceneProperty(), "height"));
+
+    }
+
+
+
+    @FXML
+    private void play(){
+        mediaPlayer.play();
+    }
+
+    @FXML
+    private void pause(){
+        mediaPlayer.pause();
+    }
+    @FXML
+    private void stop(){
+        mediaPlayer.stop();
+    }
+    @FXML
+    private void restart(){
+        mediaPlayer.seek(mediaPlayer.getStartTime());
+        mediaPlayer.play();
     }
 
     public void getAdminDetails(){

@@ -50,13 +50,7 @@
                   <Font name="System Bold" size="14.0" />
                </font></Label>
             <Button layoutX="408.0" layoutY="80.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="111.0" text="Choose Photo" />
-            <Label layoutX="319.0" layoutY="84.0" text="Admin Pic" />
-            <Label layoutX="405.0" layoutY="108.0" text="👨‍💻 Oops field under dev" textFill="RED" />
-            <Label layoutX="302.0" layoutY="78.0" prefHeight="21.0" prefWidth="14.0" text="*" textFill="RED">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
+            <Label layoutX="298.0" layoutY="84.0" text="Admin Pic" />
             <ImageView fx:id="profilePicture" fitHeight="220.0" fitWidth="250.0" layoutX="21.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>

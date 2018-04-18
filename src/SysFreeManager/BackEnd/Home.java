@@ -116,6 +116,7 @@ public class Home implements Initializable {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+        // Stops media on log out
         mediaPlayer.stop();
 
     }
@@ -130,8 +131,10 @@ public class Home implements Initializable {
 
 
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
-      String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
-      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba (HQ,16-9) - YouTube.MP4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/---OneRepublic - All The Right Moves.MKV").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
+      String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Babu Owino.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Electric.MP4").getAbsolutePath();
 

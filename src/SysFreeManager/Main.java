@@ -1,6 +1,6 @@
 package SysFreeManager;
 
-import SysFreeManager.BackEnd.RegisterAdmin;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,15 +16,20 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("UserInterface/Login.fxml"));
         Parent root = loader.load();
 
-        //RegisterAdmin registerAdmin = (RegisterAdmin) loader.getController();
-        //registerAdmin.init(primaryStage);
+        /** RegisterAdmin registerAdmin = (RegisterAdmin) loader.getController();
+        //registerAdmin.init(primaryStage); */
 
+        //Icon
         primaryStage.getIcons().add(new Image("SysFreeManager/images/icon.png"));
+        //Title
         primaryStage.setTitle("Free Management System");
-        //stage.setIconified(true);
+
+        //Add scene to primaryStage
         primaryStage.setScene(new Scene(root));
+
+        //Hide maximize window
         primaryStage.setResizable(false);
-        //stage.initStyle(StageStyle.UNDECORATED);
+
         primaryStage.show();
 
 

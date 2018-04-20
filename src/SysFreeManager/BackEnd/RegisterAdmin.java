@@ -123,7 +123,7 @@ public class RegisterAdmin implements Initializable {
 
 
         @FXML
-        public void Register(ActionEvent event){
+        public void Register(){
 
             String firstName = txtFirstName.getText();
             String secondName = txtSecondName.getText();

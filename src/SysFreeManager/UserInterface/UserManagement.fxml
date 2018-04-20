@@ -11,22 +11,22 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="792.0" style="-fx-background-color: #ffae46;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.UserManagement">
-   <SplitPane prefHeight="500.0" prefWidth="207.0" style="-fx-background-color: #FAD7A0;" />
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffae46;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SysFreeManager.BackEnd.UserManagement">
+   <SplitPane prefHeight="600.0" prefWidth="207.0" style="-fx-background-color: #FAD7A0;" />
    <Pane layoutX="214.0" layoutY="26.0">
       <children>
-         <TableView layoutY="39.0" prefHeight="385.0" prefWidth="568.0">
+         <TableView layoutY="39.0" prefHeight="467.0" prefWidth="673.0">
             <columns>
-               <TableColumn prefWidth="198.0" text="Full Names" />
-               <TableColumn prefWidth="147.0" text="Email" />
-               <TableColumn prefWidth="127.0" text="Phone" />
-               <TableColumn prefWidth="95.0" text="TotalPay" />
+               <TableColumn prefWidth="207.0" text="Full Names" />
+               <TableColumn prefWidth="159.0" text="Email" />
+               <TableColumn prefWidth="162.0" text="Phone" />
+               <TableColumn prefWidth="143.0" text="TotalPay" />
             </columns>
          </TableView>
-         <Button id="btnhome" layoutX="512.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+         <Button id="btnhome" layoutX="616.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
       </children>
    </Pane>
-   <Pane layoutX="21.0" layoutY="38.0">
+   <Pane layoutX="21.0" layoutY="38.0" prefHeight="295.0" prefWidth="162.0">
       <children>
          <Label layoutX="13.0" text="Administration">
             <font>
@@ -41,19 +41,19 @@
                <Button id="btnuserManagement" layoutX="42.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: #ffe6e6;" text="User Management" />
             </children>
          </Pane>
-         <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="5.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="5.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/graph-chart-up-down-analysis-infographic-statistic-business-3734e09acfb919b6-512x512.png" />
          </ImageView>
-         <ImageView fitHeight="33.0" fitWidth="35.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="5.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/basic1-112_user_add_new-512.png" />
          </ImageView>
-         <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="1.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="33.0" fitWidth="39.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/55.png" />
          </ImageView>
-         <Button id="btnaddUser" layoutX="52.0" layoutY="99.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
-         <Button id="btndashboard" layoutX="47.0" layoutY="142.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-         <Button id="btnaddMedia" layoutX="47.0" layoutY="181.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+         <Button id="btnaddUser" layoutX="57.0" layoutY="99.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
+         <Button id="btndashboard" layoutX="47.0" layoutY="191.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+         <Button id="btnaddMedia" layoutX="46.0" layoutY="145.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
       </children>
    </Pane>
-   <Button id="btnrefresh" layoutX="214.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #5DADE2;" text="Refresh" />
+   <Button id="btnrefresh" layoutX="214.0" layoutY="541.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #5DADE2;" text="Refresh" />
 </AnchorPane>

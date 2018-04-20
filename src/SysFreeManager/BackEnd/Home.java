@@ -40,10 +40,10 @@ import java.util.ResourceBundle;
 public class Home implements Initializable {
 
 
-    ResultSet resultSet;
-    PreparedStatement preparedStatement;
-    Connection myConn = null;;
-    String SQL;
+    private ResultSet resultSet;
+    private PreparedStatement preparedStatement;
+    private Connection myConn = null;;
+    private String SQL;
 
     @FXML
     Label lblUsername;
@@ -119,8 +119,12 @@ public class Home implements Initializable {
         // Stops media on log out
         mediaPlayer.stop();
 
+
     }
 
+
+    @FXML
+    private Label lblMediaTitle;
 
     @FXML
     private MediaView homeMedia;
@@ -130,11 +134,11 @@ public class Home implements Initializable {
     private Media media;
 
 
-      //String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+        String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba (HQ,16-9) - YouTube.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/---OneRepublic - All The Right Moves.MKV").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
-      String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Babu Owino.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Electric.MP4").getAbsolutePath();
 
@@ -144,6 +148,10 @@ public class Home implements Initializable {
     @Override
     public void initialize(URL Location, ResourceBundle resources) {
         // TODO Auto-generated method stub
+
+        /**
+         * Format the Media Url to display an accurate Media Tittle*/
+        //lblMediaTitle.setText(MEDIA_URL);
 
         media = new Media(new File(MEDIA_URL).toURI().toString());
         mediaPlayer = new MediaPlayer(media);
@@ -187,6 +195,8 @@ public class Home implements Initializable {
         mediaPlayer.play();
     }
 
+    /** To fetch admin details
+     * setText admins's name and setImage admin's profile picture */
     public void getAdminDetails(){
 
 

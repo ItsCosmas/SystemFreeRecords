@@ -37,9 +37,9 @@
          <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="7.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/55.png" />
          </ImageView>
-         <Button id="btnuserManagement" layoutX="54.0" layoutY="1.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
-         <Button id="btndashboard" layoutX="54.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-         <Button id="btnaddMedia" layoutX="53.0" layoutY="95.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+         <Button id="btnuserManagement" fx:id="btnUserManagement" layoutX="54.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
+         <Button id="btndashboard" fx:id="btnDashboard" layoutX="54.0" layoutY="140.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+         <Button id="btnaddMedia" fx:id="btnAddMedia" layoutX="53.0" layoutY="95.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add Media" />
       </children>
    </Pane>
    <Pane layoutX="223.0" layoutY="52.0" prefHeight="447.0" prefWidth="673.0" style="-fx-background-color: #ffae46;" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="52.0">
@@ -112,5 +112,5 @@
          <Button layoutX="572.0" layoutY="33.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #5DADE2;" text="Clear" />
          <Button layoutX="282.0" layoutY="33.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #5DADE2;" text="Update" />
       </children></Pane>
-   <Button layoutX="828.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+   <Button fx:id="btnGoHome" layoutX="828.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Home" />
 </AnchorPane>

@@ -16,8 +16,6 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("UserInterface/Login.fxml"));
         Parent root = loader.load();
 
-        /** RegisterAdmin registerAdmin = (RegisterAdmin) loader.getController();
-        //registerAdmin.init(primaryStage); */
 
         //Icon
         primaryStage.getIcons().add(new Image("SysFreeManager/images/icon.png"));

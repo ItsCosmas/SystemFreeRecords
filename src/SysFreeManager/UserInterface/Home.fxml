@@ -24,10 +24,10 @@
             <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="14.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../images/55.png" />
             </ImageView>
-            <Button id="btnuserManagement" fx:id="btnUserManagement" layoutX="59.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToUserManagement" style="-fx-background-color: #FAD7A0;" text="User Management" />
-            <Button id="btnaddUser" fx:id="btnAddUser" layoutX="63.0" layoutY="127.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
-            <Button id="btndashboard" fx:id="btnDashboard" layoutX="59.0" layoutY="220.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-            <Button id="btnaddMedia" fx:id="btnAddMedia" layoutX="60.0" layoutY="175.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+            <Button id="btnuserManagement" fx:id="btnUserManagement" layoutX="59.0" layoutY="85.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="User Management" />
+            <Button id="btnaddUser" fx:id="btnAddUser" layoutX="63.0" layoutY="127.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
+            <Button id="btndashboard" fx:id="btnDashboard" layoutX="59.0" layoutY="220.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+            <Button id="btnaddMedia" fx:id="btnAddMedia" layoutX="60.0" layoutY="175.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add Media" />
             <Label layoutX="24.0" layoutY="35.0" text="Administration">
                 <font>
                     <Font name="System Bold" size="18.0" />
@@ -43,8 +43,8 @@
                <Image url="@../images/DSC_0045C.jpg" />
             </image>
          </ImageView>
-         <Label id="lbluserName" fx:id="lblUsername" layoutX="506.0" layoutY="44.0" text="Cosmas" textFill="WHITE" />
-         <Button id="btnlogOut" layoutX="607.0" layoutY="53.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #5DADE2;" text="Log Out" />
+         <Label id="lbluserName" fx:id="lblUsername" layoutX="506.0" layoutY="44.0" text="User" textFill="WHITE" />
+         <Button id="btnlogOut" fx:id="btnLogout" layoutX="607.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Log Out" />
          <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="624.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@../images/bell-512.png" />
@@ -80,7 +80,7 @@
                <Font name="System Bold" size="14.0" />
             </font>
          </Label>
-         <MediaView fx:id="homeMedia" fitHeight="280.0" fitWidth="320.0" layoutX="10.0" layoutY="35.0" preserveRatio="false" />
+         <MediaView fx:id="homeMedia" fitHeight="260.0" fitWidth="320.0" layoutX="10.0" layoutY="24.0" preserveRatio="false" />
          <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="160.0" layoutY="286.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
             <image>
                <Image url="@../images/ic_pause_circle_outline_black_24dp.png" />
@@ -101,9 +101,14 @@
                <Image url="@../images/ic_refresh_black_24dp.png" />
             </image>
          </ImageView>
-         <Label fx:id="lblMediaTitle" layoutX="29.0" layoutY="315.0" text="Media Tittle">
+         <Label fx:id="lblMediaTitle" layoutX="68.0" layoutY="320.0" text="This is the Media Tittle">
             <font>
                <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="28.0" layoutY="318.0" text="Title:">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
             </font>
          </Label>
       </children>

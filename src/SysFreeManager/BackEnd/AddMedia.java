@@ -1,65 +1,60 @@
 package SysFreeManager.BackEnd;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
-public class AddMedia {
+import java.net.URL;
+import java.util.ResourceBundle;
 
-    @FXML
+public class AddMedia implements Initializable {
 
-    private void goToUserManagement (ActionEvent event) throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/UserManagement.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-    }
-
+    private SceneSwitches sceneSwitches = new SceneSwitches();
 
     @FXML
+    private Button btnUserManagement,btnAddUser,btnDashboard,btnGoHome;
 
-    private void goToAddUser(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/AddUser.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
-    }
+        // TODO Auto-generated method stub
 
-    @FXML
 
-    private void goToDashboard(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Dashboard.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
 
-    }
+        btnUserManagement.setOnAction(event -> {
+            try {
+                sceneSwitches.goToUserManagement(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
-    @FXML
 
-    private void goToHome(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
+        btnAddUser.setOnAction(event -> {
+            try {
+                sceneSwitches.goToAddUser(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
-    }
+        btnDashboard.setOnAction(event -> {
+            try {
+                sceneSwitches.goToDashboard(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+        btnGoHome.setOnAction(event -> {
+            try {
+                sceneSwitches.goToHome(event);
+
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+    } //End of initialize
 
 }

@@ -1,94 +1,81 @@
 package SysFreeManager.BackEnd;
 
+/*
+  Check that file field is not empty
+  Add stylesheets to DialogPanes
+  */
+
 import SysFreeManager.MySQLConnection;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.InputStream;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+//import java.io.InputStream;
 
 public class RegisterAdmin implements Initializable {
 
-        public LoginModel loginModel = new LoginModel();
+        private LoginModel loginModel = new LoginModel();
 
+        private SceneSwitches sceneSwitches = new SceneSwitches();
 
-        File file;
+        private File file;
 
         @FXML
         private Label lblIsConnected;
 
-        @FXML
-        private TextField txtFirstName;
+        @FXML Button btnLogin;
 
         @FXML
-        private TextField txtSecondName;
-
-        @FXML
-        private TextField txtUsername;
-
-        @FXML
-        private PasswordField txtPassword;
-
-        @FXML
-        private PasswordField txtConfirmPassword;
+        private TextField txtFirstName,txtSecondName,txtUsername;
 
 
         @FXML
-        private Label lblRegError;
+        private PasswordField txtPassword,txtConfirmPassword;
 
-        @FXML
-        private Label lblRegSuccess;
 
         @FXML
         private ImageView profilePicture;
 
         @FXML
-        private Stage stage;
-
-        private Image image;
+        private Stage stage; // This should not be removed even if marked as unused
 
 
-
-        ResultSet resultSet;
-        PreparedStatement preparedStatement;
-        Connection myConn = null;;
-        String SQL;
-
-
-        @Override
+    @Override
         public void initialize(URL Location, ResourceBundle resourceBundle) {
             // TODO Auto-generated method stub
-            if (loginModel.isDBConnected()){
-                lblIsConnected.setText(" \uD83D\uDE07 You're Connected");
-                lblIsConnected.setStyle("-fx-text-fill: green");
-            }else {
+            //Inverting if statement hides the code duplicate error
+            if (!loginModel.isDBConnected()) {
                 lblIsConnected.setText(" \uD83D\uDE1E Hmmm,You're Not Connected");
                 lblIsConnected.setStyle("-fx-text-fill: red");
+            } else {
+                lblIsConnected.setText(" \uD83D\uDE07 You're Connected");
+                lblIsConnected.setStyle("-fx-text-fill: green");
             }
+
+            btnLogin.setOnAction(event -> {
+                try {
+                    sceneSwitches.goToLogin(event);
+                }catch (Exception e){
+                    System.out.println("An Error Occurred");
+                }
+            });
+
         }
 
 
-        public String passwordHash() {
+        private String passwordHash() {
 
             String salt = txtUsername.getText();
             String passwordToBeHashed = txtPassword.getText()+salt;
@@ -103,9 +90,10 @@ public class RegisterAdmin implements Initializable {
                 //This bytes[] has bytes in decimal format;
                 //Convert it to hexadecimal format
                 StringBuilder sb = new StringBuilder();
-                for (int i=0; i<bytes.length; i++)
-                {
-                    sb.append(Integer.toString((bytes[i] & 0xff)+ 0x100, 16).substring(1));
+                
+                //Replaced for loop with foreach
+                for (byte aByte : bytes) {
+                    sb.append(Integer.toString((aByte & 0xff) + 0x100, 16).substring(1));
                 }
                 //Get complete hashed password in hex format
                 generatedPassword = sb.toString();
@@ -131,10 +119,26 @@ public class RegisterAdmin implements Initializable {
             String password = txtPassword.getText();
             String confirmPassword = txtConfirmPassword.getText();
 
-            if(firstName.trim().isEmpty() || secondName.trim().isEmpty() || username.trim().isEmpty() || password.trim().isEmpty() || confirmPassword.trim().isEmpty() ){
+            if(firstName.trim().isEmpty() || secondName.trim().isEmpty() || username.trim().isEmpty() || password.trim().isEmpty() || confirmPassword.trim().isEmpty()  ){
 
-                lblRegSuccess.setText(null);
-                lblRegError.setText(" \uD83D\uDE1F Please Fill in All Fields");
+
+
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Warning");
+                alert.setHeaderText(null);
+                alert.setContentText(" \uD83D\uDE1F Please Fill in All Fields!");
+                //	alert.setResizable(true);
+                alert.getDialogPane().setPrefSize(280, 100);
+
+                // Get the Stage.
+                //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                // Add a custom icon.
+                //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                DialogPane dialogPane = alert.getDialogPane();
+                //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                alert.showAndWait();
 
             } else {
 
@@ -151,15 +155,21 @@ public class RegisterAdmin implements Initializable {
 
                         String finalPassword = passwordHash();
 
-                        myConn = MySQLConnection.dbConnector(); // this is the database connection
-                        String SQL = "INSERT INTO systemfreedb.admins SET adminPic = ?,firstName = ? ,secondName = ?,username = ? ,password = ?" ;
+                        Connection myConn = MySQLConnection.dbConnector();
+
+                        String setMaxBlobSize = "set global max_allowed_packet = 1024 * 1024 *14 ";
+                        PreparedStatement preparedStatement = myConn.prepareStatement(setMaxBlobSize);
+                        preparedStatement.execute();
+                        //System.out.println("Max File Size Set");
+
+                        String SQL = "INSERT INTO systemfreedb.admins SET adminPic = ?,firstName = ? ,secondName = ?,username = ? ,password = ?";
 
 
-                        PreparedStatement preparedStatement = myConn.prepareStatement(SQL);
+                        preparedStatement = myConn.prepareStatement(SQL);
 
 
                         //more options
-                        preparedStatement.setBlob(1,(InputStream)fileInputStream , (long) file.length() );
+                        preparedStatement.setBlob(1,fileInputStream , file.length() );
                         preparedStatement.setString(2,txtFirstName.getText());
                         preparedStatement.setString(3,txtSecondName.getText());
                         preparedStatement.setString(4,txtUsername.getText());
@@ -168,7 +178,21 @@ public class RegisterAdmin implements Initializable {
 
                         preparedStatement.execute();
 
-                        lblRegSuccess.setText("\uD83D\uDE03 Registration Successful");
+                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                        alert.setTitle("Information");
+                        alert.setHeaderText(null);
+                        alert.setContentText("\uD83D\uDE03 Registration Successful");
+                        alert.getDialogPane().setPrefSize(250, 100);
+                        // Get the Stage.
+                        //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                        // Add a custom icon.
+                        //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                        DialogPane dialogPane = alert.getDialogPane();
+                        //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                        alert.showAndWait();
+
 
 
                         preparedStatement.close();
@@ -176,8 +200,23 @@ public class RegisterAdmin implements Initializable {
 
                     } catch (Exception e) {
 
-                        lblRegSuccess.setText(null);
-                        lblRegError.setText("\uD83D\uDE1F Username is already registered");
+
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setTitle("Warning");
+                        alert.setHeaderText(null);
+                        alert.setContentText("\uD83D\uDE1F Username is already registered");
+                        //	alert.setResizable(true);
+                        alert.getDialogPane().setPrefSize(280, 100);
+
+                        // Get the Stage.
+                        //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                        // Add a custom icon.
+                        //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                        DialogPane dialogPane = alert.getDialogPane();
+                        //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                        alert.showAndWait();
 
 
 
@@ -185,32 +224,29 @@ public class RegisterAdmin implements Initializable {
 
                 } else {
 
-                    lblRegSuccess.setText(null);
-                    lblRegError.setText("\uD83D\uDE15 Passwords Don't match");
+
+                    Alert alert = new Alert(Alert.AlertType.WARNING);
+                    alert.setTitle("Warning");
+                    alert.setHeaderText(null);
+                    alert.setContentText("\uD83D\uDE15 Passwords Don't match, Please Re-enter passwords");
+                    //	alert.setResizable(true);
+                    alert.getDialogPane().setPrefSize(280, 100);
+
+                    // Get the Stage.
+                    //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                    // Add a custom icon.
+                    //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                    DialogPane dialogPane = alert.getDialogPane();
+                    //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                    alert.showAndWait();
 
                 }
             }
         }
 
 
-    @FXML
-    private void goToLogin(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Login.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-
-    }
-
-
-
-
-        //public void init(Stage stage){
-          //  this.stage = stage;
-        //}
 
 
     @FXML
@@ -221,8 +257,8 @@ public class RegisterAdmin implements Initializable {
             fileChooser.setTitle("Choose a Profile Picture");
             fileChooser.getExtensionFilters().addAll(
                     // To filter only specific image formats
-                    new FileChooser.ExtensionFilter("JPG Files","*.*"),
-                    new FileChooser.ExtensionFilter("PNG Files","*.*")
+                    new FileChooser.ExtensionFilter("JPG Files","*.JPG"),
+                    new FileChooser.ExtensionFilter("PNG Files","*.PNG")
             );
 
 
@@ -231,7 +267,7 @@ public class RegisterAdmin implements Initializable {
 
             if (file != null){
                 //System.out.println("Chosen File: " + file);
-                image = new Image(file.toURI().toString());
+                Image image = new Image(file.toURI().toString());
 
                 //profilePicture = new ImageView(image);
                 profilePicture.setImage(image);

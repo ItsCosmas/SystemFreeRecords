@@ -1,36 +1,28 @@
+/*
+  To query the DB for current Admin User and display along with a welcome text
+  To query the DB for number of Exclusive media stored
+  To query the DB for Journalist who grossed the highest pay and display the pay along
+  To query the DB for media item that grossed the highest pay and play the media in future release
+  To give a monthly summary of the media items
+
+  */
+
 /**
- * To query the DB for current Admin User and display along with a welcome text
- * To query the DB for number of Exclusive media stored
- * To query the DB for Journalist who grossed the highest pay and display the pay along
- * To query the DB for media item that grossed the highest pay and play the media in future release
- * To give a monthly summary of the media items
- *
- * */
+ * BUG ALERT
+ * Leaving the home scene and returning back doesn't set the Username and Image again */
+
 
 package SysFreeManager.BackEnd;
 
 import SysFreeManager.MySQLConnection;
-import javafx.beans.property.DoubleProperty;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
-import javafx.stage.Stage;
-import javafx.scene.media.Media;
-import javafx.beans.binding.Bindings;
 
-
-import javax.swing.text.html.ImageView;
-import java.io.InputStream;
 import java.io.File;
 import java.net.URL;
 import java.sql.*;
@@ -39,103 +31,29 @@ import java.util.ResourceBundle;
 
 public class Home implements Initializable {
 
-
-    private ResultSet resultSet;
-    private PreparedStatement preparedStatement;
-    private Connection myConn = null;;
-    private String SQL;
-
-    @FXML
-    Label lblUsername;
+    private SceneSwitches sceneSwitches = new SceneSwitches();
 
 
-
+    private String theUsername;
 
     @FXML
-    private void goToUserManagement (ActionEvent event) throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/UserManagement.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-        mediaPlayer.pause();
-    }
+    private Label lblUsername,lblMediaTitle;
 
 
 
 
     @FXML
-    private void goToAddMedia(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/AddMedia.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-        mediaPlayer.pause();
+    private Button btnUserManagement,btnAddUser,btnAddMedia,btnDashboard,btnLogout;
 
-    }
-
-    @FXML
-    private void goToAddUser(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/AddUser.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-        mediaPlayer.pause();
-
-    }
-
-    @FXML
-
-    private void goToDashboard(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Dashboard.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-        mediaPlayer.pause();
-
-    }
-
-
-        @FXML
-        private void goToLogin(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Login.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-        // Stops media on log out
-        mediaPlayer.stop();
-
-
-    }
-
-
-    @FXML
-    private Label lblMediaTitle;
 
     @FXML
     private MediaView homeMedia;
 
     private MediaPlayer mediaPlayer;
 
-    private Media media;
 
-
-        String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
-      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba (HQ,16-9) - YouTube.MP4").getAbsolutePath();
+    private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+      //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/---OneRepublic - All The Right Moves.MKV").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Kisungu.mp4").getAbsolutePath();
@@ -147,13 +65,75 @@ public class Home implements Initializable {
 
     @Override
     public void initialize(URL Location, ResourceBundle resources) {
+
+        //
+        //TODO
+        //To Deploy Lambda expressions
+        btnUserManagement.setOnAction(event -> {
+            try {
+                sceneSwitches.goToUserManagement(event);
+                mediaPlayer.stop();
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+
+        btnAddUser.setOnAction(event -> {
+            try {
+                sceneSwitches.goToAddUser(event);
+                mediaPlayer.stop();
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+
+        btnAddMedia.setOnAction(event -> {
+            try {
+                sceneSwitches.goToAddMedia(event);
+                mediaPlayer.stop();
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+        btnDashboard.setOnAction(event -> {
+            try {
+                sceneSwitches.goToDashboard(event);
+                mediaPlayer.stop();
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+        btnLogout.setOnAction(event -> {
+            try {
+                sceneSwitches.goToLogin(event);
+                mediaPlayer.stop();
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
+
+
         // TODO Auto-generated method stub
 
-        /**
-         * Format the Media Url to display an accurate Media Tittle*/
+        // The regex below only extracts the Tittle part of the media
+
+
+        String [] mediaTitleParts = MEDIA_URL.split(":");
+        String mediaTitleSecondPart = mediaTitleParts [1];
+        //System.out.println(mediaTitleSecondPart);
+        String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
+        String MediaTitle = MediaTitlePartsMain [6];
+        //System.out.println(MediaTitle);
+        lblMediaTitle.setText(MediaTitle);
+
         //lblMediaTitle.setText(MEDIA_URL);
 
-        media = new Media(new File(MEDIA_URL).toURI().toString());
+        Media media = new Media(new File(MEDIA_URL).toURI().toString());
         mediaPlayer = new MediaPlayer(media);
 
         //mediaPlayer = new MediaPlayer(new Media(this.getClass().getResource(MEDIA_URL).toExternalForm()));
@@ -197,23 +177,50 @@ public class Home implements Initializable {
 
     /** To fetch admin details
      * setText admins's name and setImage admin's profile picture */
+
+    public void setLoggedInUserDetails(String username){
+
+
+        theUsername = username;
+        //System.out.println("The Username passed is " + theUsername);
+        //String theUsername = username;
+        //this.lblUsername.setText(username);
+        //System.out.println(username);
+
+    }
+
+
+
     public void getAdminDetails(){
 
 
         try {
-            myConn = MySQLConnection.dbConnector();
-            Statement myStatement = myConn.createStatement();
-
-            String SQL = "SELECT firstName FROM systemfreedb.admins WHERE username = ? " ;
+            Connection myConn = MySQLConnection.dbConnector();
 
 
-            ResultSet myResultSet = myStatement.executeQuery(SQL);
+            String mySQL = "SELECT firstName FROM systemfreedb.admins WHERE username = ? ;";
+
+            PreparedStatement preparedStatement = myConn.prepareStatement(mySQL);
+
+            //System.out.println(theUsername);
+
+            preparedStatement.setString(1,theUsername);
+
+
+            //preparedStatement.execute();
+
+
+            //ResultSet myResultSet = myStatement.executeQuery(SQL);
+
+            ResultSet myResultSet = preparedStatement.executeQuery();
 
             //Process the result set
 
-            while (myResultSet.next())
+            while (myResultSet.next()) {
 
+                //System.out.println(myResultSet.getString("firstName"));
                 lblUsername.setText(myResultSet.getString("firstName"));
+            }
 
 
         } catch (SQLException e) {
@@ -222,9 +229,6 @@ public class Home implements Initializable {
 
 
     }
-
-
-
 
 
 }

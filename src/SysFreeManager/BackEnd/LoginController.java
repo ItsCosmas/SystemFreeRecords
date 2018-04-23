@@ -1,45 +1,42 @@
 package SysFreeManager.BackEnd;
 
-import java.io.IOException;
-import java.net.URL;
-import java.security.MessageDigest;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
-
-
-import SysFreeManager.MySQLConnection;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class LoginController implements Initializable {
-    public LoginModel loginModel = new LoginModel();
+import java.io.IOException;
+import java.net.URL;
+import java.security.MessageDigest;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
 
-    ResultSet resultSet;
-    PreparedStatement preparedStatement;
-    Connection myConn = null;
-    String SQL;
+public class LoginController implements Initializable  {
+
     @FXML
-    private Label lblLoginWarning;
+    private Hyperlink btnRegister;
+
+    private SceneSwitches sceneSwitches = new SceneSwitches();
+
+
+    private LoginModel loginModel = new LoginModel();
+
+    @FXML
+    private Label lblLoginWarning, lblIsConnected;
 
     @FXML
     private TextField txtUsername;
 
     @FXML
     private PasswordField txtPassword;
-
-    @FXML
-    private Label lblIsConnected;
-
 
 
     @Override
@@ -52,15 +49,25 @@ public class LoginController implements Initializable {
             lblIsConnected.setText(" \uD83D\uDE1E Hmmm,You're Not Connected");
             lblIsConnected.setStyle("-fx-text-fill: red");
         }
+
+        btnRegister.setOnAction(event -> {
+            try {
+                sceneSwitches.goToRegisterAdmin(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
+
     }
 
 
 
 
-   public String passwordHash() {
+
+   private String passwordHash() {
         String salt = txtUsername.getText();
         String passwordToBeHashed = txtPassword.getText()+salt;
-        String generatedPassword = null;
+        String generatedPassword;
         try {
             // Create MessageDigest instance for MD5
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -77,13 +84,15 @@ public class LoginController implements Initializable {
             }
             //Get complete hashed password in hex format
             generatedPassword = sb.toString();
+
+            //
             return generatedPassword;
 
         }catch (Exception e) {
             e.printStackTrace();
         }
-        //System.out.println(generatedPassword);
-        return generatedPassword;
+
+        return null;
     }
 
 
@@ -92,41 +101,34 @@ public class LoginController implements Initializable {
     public void Login (ActionEvent event) throws SQLException {
 
         try {
-            //		if (loginModel.isLogin(txtUsername.getText(), txtPassword.getText())){
+
             if (loginModel.isLogin(txtUsername.getText(),passwordHash())){
-                //lblLoginWarning.setText("Correct Login Credentials");
-                //lblLoginWarning.setStyle("-fx-text-fill: green");
 
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
+                
                 Parent home = loader.load();
                 Scene home_scene = new Scene(home);
                 Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 home_stage.setScene(home_scene);
                 home_stage.show();
 
+                //Passes the username to home
+                Home homepage = loader.getController();
+                homepage.setLoggedInUserDetails(txtUsername.getText());
+
+                // Print Welcome Message
+                homepage.getAdminDetails();
+
 
             }else {
                 lblLoginWarning.setText("\uD83D\uDE0F Username or Password is Incorrect");
+
+
             }
         } catch (IOException e) {
 
             e.printStackTrace();
         }
     }
-
-
-
-            @FXML
-            private void goToRegisterAdmin (ActionEvent event) throws Exception {
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/RegisterAdmin.fxml"));
-                Parent home = loader.load();
-                Scene home_scene = new Scene(home);
-                Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                home_stage.setScene(home_scene);
-                home_stage.show();
-
-            }
-
-        }
+}

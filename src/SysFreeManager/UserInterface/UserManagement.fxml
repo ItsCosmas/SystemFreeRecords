@@ -23,7 +23,7 @@
                <TableColumn prefWidth="143.0" text="TotalPay" />
             </columns>
          </TableView>
-         <Button id="btnhome" layoutX="616.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToHome" style="-fx-background-color: #5DADE2;" text="Home" />
+         <Button id="btnhome" fx:id="btnGoHome" layoutX="616.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Home" />
       </children>
    </Pane>
    <Pane layoutX="21.0" layoutY="38.0" prefHeight="295.0" prefWidth="162.0">
@@ -50,9 +50,9 @@
          <ImageView fitHeight="33.0" fitWidth="39.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/55.png" />
          </ImageView>
-         <Button id="btnaddUser" layoutX="57.0" layoutY="99.0" mnemonicParsing="false" onAction="#goToAddUser" style="-fx-background-color: #FAD7A0;" text="Add User" />
-         <Button id="btndashboard" layoutX="47.0" layoutY="191.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
-         <Button id="btnaddMedia" layoutX="46.0" layoutY="145.0" mnemonicParsing="false" onAction="#goToAddMedia" style="-fx-background-color: #FAD7A0;" text="Add Media" />
+         <Button id="btnaddUser" fx:id="btnAddUser" layoutX="57.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add User" />
+         <Button id="btndashboard" fx:id="btnDashboard" layoutX="47.0" layoutY="191.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Dashboard" />
+         <Button id="btnaddMedia" fx:id="btnAddMedia" layoutX="46.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: #FAD7A0;" text="Add Media" />
       </children>
    </Pane>
    <Button id="btnrefresh" layoutX="214.0" layoutY="541.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #5DADE2;" text="Refresh" />

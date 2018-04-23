@@ -3,20 +3,13 @@ package SysFreeManager.BackEnd;
 import java.sql.*;
 
 import SysFreeManager.MySQLConnection;
-import javafx.fxml.FXML;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+
 
 public class LoginModel {
-    Connection connection;
+    private Connection connection;
 
-    @FXML
-    private TextField txtUsername;
 
-    @FXML
-    private PasswordField txtPassword;
-
-    public LoginModel (){
+    LoginModel(){
         connection = MySQLConnection.dbConnector();
         if (connection == null) System.exit(1);
     }
@@ -38,17 +31,16 @@ public class LoginModel {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         String query = "select * from systemfreedb.admins where username = ? and password = ?";
+
+        //try using automatic resource management leads to an error in Login
         try {
             preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
 
             resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                return true;
-            } else {
-                return false;
-            }
+
+            return resultSet.next() ? true : false;
         } catch (Exception e) {
             return false;
             // TODO: handle exception

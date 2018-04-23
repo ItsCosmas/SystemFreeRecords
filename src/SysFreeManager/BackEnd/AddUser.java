@@ -1,12 +1,14 @@
 package SysFreeManager.BackEnd;
 
+/*
+* Add Alerts and Dialogs for user interactivity
+* Check whether file field is empty
+* */
+
 import SysFreeManager.MySQLConnection;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -16,14 +18,17 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileInputStream;
-//import java.io.InputStream;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.util.ResourceBundle;
+
+//import java.io.InputStream;
 
 
+public class AddUser implements Initializable {
 
-public class AddUser {
+    private SceneSwitches sceneSwitches = new SceneSwitches();
 
 
     private File file;
@@ -31,96 +36,63 @@ public class AddUser {
 
 
     @FXML
-    private TextField txtFirstName;
-
-    @FXML
-    private TextField txtSecondName;
-
-    @FXML
-    private TextField txtLastName;
-
-    @FXML
-    private TextField txtIdNumber;
-
-    @FXML
-    private TextField txtEmail;
-
-    @FXML
-    private TextField txtPhone;
+    private TextField txtFirstName,txtSecondName,txtLastName,txtIdNumber,txtEmail,txtPhone;
 
 
     @FXML
-    private Label lblAddError;
+    private Label lblAddError,lblAddSuccess;
 
-    @FXML
-    private Label lblAddSuccess;
+
 
     @FXML
     private ImageView profilePicture;
 
     @FXML
-    private Stage stage; // Just can't remove this
+    private Button btnUserManagement,btnAddMedia,btnDashboard,btnGoHome;
 
-    private Image image;
-
-
-
-    private ResultSet resultSet;
-    private PreparedStatement preparedStatement;
-    private Connection myConn = null;
-    private String SQL;
-
-    @FXML
-
-    private void goToUserManagement (ActionEvent event) throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/UserManagement.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-    }
+    private Stage stage; // Just can't remove this, Used in Show file dialog
 
 
-    @FXML
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
-    private void goToAddMedia(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/AddMedia.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
-
-    }
+        // TODO Auto-generated method stub
 
 
-    @FXML
 
-    private void goToDashboard(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Dashboard.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
+        btnUserManagement.setOnAction(event -> {
+            try {
+                sceneSwitches.goToUserManagement(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
-    }
 
-    @FXML
+        btnAddMedia.setOnAction(event -> {
+            try {
+                sceneSwitches.goToAddMedia(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
-    private void goToHome(ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/SysFreeManager/UserInterface/Home.fxml"));
-        Parent home = loader.load();
-        Scene home_scene = new Scene(home);
-        Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        home_stage.setScene(home_scene);
-        home_stage.show();
+        btnDashboard.setOnAction(event -> {
+            try {
+                sceneSwitches.goToDashboard(event);
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
+        btnGoHome.setOnAction(event -> {
+            try {
+                sceneSwitches.goToHome(event);
+
+            }catch (Exception e){
+                System.out.println("An Error Occurred");
+            }
+        });
 
     }
 
@@ -146,7 +118,7 @@ public class AddUser {
         if (file != null){
 
             // To Display selected image on ImageView
-            image = new Image(file.toURI().toString());
+            Image image = new Image(file.toURI().toString());
 
 
             profilePicture.setImage(image);
@@ -181,8 +153,8 @@ public class AddUser {
                     FileInputStream fileInputStream = new FileInputStream(file);
 
 
+                    Connection myConn = MySQLConnection.dbConnector();
 
-                    myConn = MySQLConnection.dbConnector(); // this is the database connection
                     String setMaxBlobSize = "set global max_allowed_packet = 1024 * 1024 *14 ";
                     PreparedStatement preparedStatement = myConn.prepareStatement(setMaxBlobSize);
                     preparedStatement.execute();
@@ -229,7 +201,6 @@ public class AddUser {
 
         }
     }
-
 
 
 }

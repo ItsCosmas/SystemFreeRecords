@@ -15,10 +15,13 @@
 package SysFreeManager.BackEnd;
 
 import SysFreeManager.MySQLConnection;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -38,6 +41,9 @@ public class Home implements Initializable {
 
     @FXML
     private Label lblUsername,lblMediaTitle;
+
+    @FXML
+    private Slider homeVolumeSlider;
 
 
 
@@ -141,6 +147,17 @@ public class Home implements Initializable {
         //mediaPlayer.setAutoPlay(true);
         //mediaPlayer.setCycleCount(10);
         //mediaPlayer.getAudioEqualizer();
+
+
+        // Volume Slider
+        homeVolumeSlider.setValue(mediaPlayer.getVolume() * 100);
+        homeVolumeSlider.valueProperty().addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(Observable observable) {
+                mediaPlayer.setVolume(homeVolumeSlider.getValue() / 100);
+
+            }
+        });
 
         homeMedia.setMediaPlayer(mediaPlayer);
 

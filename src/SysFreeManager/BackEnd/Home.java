@@ -7,7 +7,7 @@
 
   */
 
-/**
+/*
  * BUG ALERT
  * Leaving the home scene and returning back doesn't set the Username and Image again */
 
@@ -15,8 +15,8 @@
 package SysFreeManager.BackEnd;
 
 import SysFreeManager.MySQLConnection;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
+//import javafx.beans.InvalidationListener;
+//import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -152,13 +152,15 @@ public class Home implements Initializable {
 
         // Volume Slider
         homeVolumeSlider.setValue(mediaPlayer.getVolume() * 100);
-        homeVolumeSlider.valueProperty().addListener(new InvalidationListener() {
+        homeVolumeSlider.valueProperty().addListener(observable -> mediaPlayer.setVolume(homeVolumeSlider.getValue() / 100));
+        /*  //Replaced with Lambda
+            homeVolumeSlider.valueProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
                 mediaPlayer.setVolume(homeVolumeSlider.getValue() / 100);
 
             }
-        });
+        }); */
 
         homeMedia.setMediaPlayer(mediaPlayer);
 

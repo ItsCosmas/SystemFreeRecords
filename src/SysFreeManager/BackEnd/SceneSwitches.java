@@ -76,8 +76,7 @@ public class SceneSwitches  {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
-        // Stops media on log out
-
+       
 
 }
 
@@ -89,6 +88,9 @@ public class SceneSwitches  {
         Stage home_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         home_stage.setScene(home_scene);
         home_stage.show();
+
+
+
 
     }
 

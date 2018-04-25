@@ -133,7 +133,8 @@ public class Home implements Initializable {
         String mediaTitleSecondPart = mediaTitleParts [1];
         //System.out.println(mediaTitleSecondPart);
         String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
-        String MediaTitle = MediaTitlePartsMain [6];
+        //Extract the Title part which usually the last String after split
+        String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
         //System.out.println(MediaTitle);
         lblMediaTitle.setText(MediaTitle);
 

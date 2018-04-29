@@ -8,9 +8,7 @@ package SysFreeManager.BackEnd;
 import SysFreeManager.MySQLConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
@@ -38,9 +36,6 @@ public class AddUser implements Initializable {
     @FXML
     private TextField txtFirstName,txtSecondName,txtLastName,txtIdNumber,txtEmail,txtPhone;
 
-
-    @FXML
-    private Label lblAddError,lblAddSuccess;
 
 
 
@@ -88,6 +83,8 @@ public class AddUser implements Initializable {
         btnGoHome.setOnAction(event -> {
             try {
                 sceneSwitches.goToHome(event);
+                Home home = new Home();
+                home.getAdminDetails();
 
             }catch (Exception e){
                 System.out.println("An Error Occurred");
@@ -138,11 +135,26 @@ public class AddUser implements Initializable {
         String employeeEmail  = txtEmail.getText();
         String employeePhone = txtPhone.getText();
 
-        if(employeeFirstName.trim().isEmpty() || employeeSecondName.trim().isEmpty() || employeeLastName.trim().isEmpty() || employeeEmail.trim().isEmpty() || employeePhone.trim().isEmpty() || employeeIdNumber.trim().isEmpty() ){
+        if(employeeFirstName.trim().isEmpty() || employeeSecondName.trim().isEmpty() || employeeLastName.trim().isEmpty() || employeeEmail.trim().isEmpty() || employeePhone.trim().isEmpty() || employeeIdNumber.trim().isEmpty() || file == null ){
 
 
-            lblAddSuccess.setText(null);
-            lblAddError.setText("\uD83D\uDE0F Please Fill In All Mandatory Fields");
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning");
+            alert.setHeaderText(null);
+            alert.setContentText("\uD83D\uDE0F Please Fill In All Mandatory Fields");
+            //	alert.setResizable(true);
+            alert.getDialogPane().setPrefSize(300, 150);
+
+            // Get the Stage.
+            //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+            // Add a custom icon.
+            //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+            DialogPane dialogPane = alert.getDialogPane();
+            //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+            alert.showAndWait();
+
 
         } else {
 
@@ -181,8 +193,20 @@ public class AddUser implements Initializable {
 
                     preparedStatement.execute();
 
-                    lblAddError.setText(null);
-                    lblAddSuccess.setText("\uD83D\uDE0E New User has been Added Successfully");
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Information");
+                    alert.setHeaderText(null);
+                    alert.setContentText("\uD83D\uDE0E New User has been Added Successfully");
+                    alert.getDialogPane().setPrefSize(300, 150);
+                    // Get the Stage.
+                    //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                    // Add a custom icon.
+                    //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                    DialogPane dialogPane = alert.getDialogPane();
+                    //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                    alert.showAndWait();
 
 
                     preparedStatement.close();
@@ -191,9 +215,24 @@ public class AddUser implements Initializable {
                 } catch (Exception e) {
 
 
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Warning");
+                    alert.setHeaderText(null);
+                    alert.setContentText("\uD83D\uDE1E An Error Occurred, Please try again, or User already exists, check email, id number or phone");
+                    //	alert.setResizable(true);
+                    alert.getDialogPane().setPrefSize(300, 150);
+
+                    // Get the Stage.
+                    //Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+                    // Add a custom icon.
+                    //stage.getIcons().add(new Image(this.getClass().getResource("/images/system_login.png").toString()));
+
+                    DialogPane dialogPane = alert.getDialogPane();
+                    //dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
+                    alert.showAndWait();
+
                     //e.printStackTrace();
-                    lblAddSuccess.setText(null);
-                    lblAddError.setText("\uD83D\uDE1E An Error Occurred");
 
 
 

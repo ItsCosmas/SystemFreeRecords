@@ -22,11 +22,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 
-import java.io.File;
+import java.io.*;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -41,6 +43,9 @@ public class Home implements Initializable {
 
     @FXML
     private Label lblUsername,lblMediaTitle;
+
+    @FXML
+    ImageView adminPicHome;
 
     @FXML
     private Slider homeVolumeSlider;
@@ -58,7 +63,8 @@ public class Home implements Initializable {
     private MediaPlayer mediaPlayer;
 
 
-    private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+     private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+      //private String MEDIA_URL = new File("C:\\Users\\user\\Videos\\eminemagain.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/---OneRepublic - All The Right Moves.MKV").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/PLO.MP4").getAbsolutePath();
@@ -72,9 +78,6 @@ public class Home implements Initializable {
     @Override
     public void initialize(URL Location, ResourceBundle resources) {
 
-        //
-        //TODO
-        //To Deploy Lambda expressions
         btnUserManagement.setOnAction(event -> {
             try {
                 sceneSwitches.goToUserManagement(event);
@@ -124,10 +127,7 @@ public class Home implements Initializable {
 
 
 
-        // TODO Auto-generated method stub
-
         // The regex below only extracts the Tittle part of the media
-
 
         String [] mediaTitleParts = MEDIA_URL.split(":");
         String mediaTitleSecondPart = mediaTitleParts [1];
@@ -176,6 +176,7 @@ public class Home implements Initializable {
 
 
 
+    // Controls player icons functions
     @FXML
     private void play(){
         mediaPlayer.play();
@@ -195,9 +196,10 @@ public class Home implements Initializable {
         mediaPlayer.play();
     }
 
-    /** To fetch admin details
-     * setText admins's name and setImage admin's profile picture */
+    //To fetch admin details
+    //setText admins's name and setImage admin's profile picture
 
+    // Receives admin's Username from the Login page
     public void setLoggedInUserDetails(String username){
 
 
@@ -218,7 +220,7 @@ public class Home implements Initializable {
             Connection myConn = MySQLConnection.dbConnector();
 
 
-            String mySQL = "SELECT firstName FROM systemfreedb.admins WHERE username = ? ;";
+            String mySQL = "SELECT * FROM systemfreedb.admins WHERE username = ? ;";
 
             PreparedStatement preparedStatement = myConn.prepareStatement(mySQL);
 
@@ -240,15 +242,38 @@ public class Home implements Initializable {
 
                 //System.out.println(myResultSet.getString("firstName"));
                 lblUsername.setText(myResultSet.getString("firstName"));
+                //adminPicHome.setImage(Image.impl_fromPlatformImage(myResultSet.getBinaryStream("adminPic")));
+
+                InputStream inputStream = myResultSet.getBinaryStream("adminPic");
+                OutputStream outputStream = new FileOutputStream(new File("adminPicture.jpg"));
+                byte [] content = new byte[1024];
+                int size = 0;
+
+                while ((size = inputStream.read(content)) != -1){
+                        outputStream.write(content, 0, size);
+                }
+
+                outputStream.close();
+                inputStream.close();
+
+
+                Image image = new Image("file:adminPicture.jpg");
+
+                adminPicHome.setImage(image);
+
             }
 
 
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
-    }
+    } // getAdminDetails method ends here
 
 
 }

@@ -39,9 +39,9 @@
     </Pane>
    <Pane layoutX="214.0" prefHeight="90.0" prefWidth="687.0" style="-fx-background-color: #283747;">
       <children>
-         <ImageView id="imguserPic" fitHeight="76.0" fitWidth="65.0" layoutX="426.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
+         <ImageView id="imguserPic" fx:id="adminPicHome" fitHeight="76.0" fitWidth="65.0" layoutX="426.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
             <image>
-               <Image url="@../images/DSC_0045C.jpg" />
+               <Image url="@../images/ic_insert_emoticon_black_36dp.png" />
             </image>
          </ImageView>
          <Label id="lbluserName" fx:id="lblUsername" layoutX="506.0" layoutY="44.0" text="User" textFill="WHITE" />
@@ -112,7 +112,7 @@
                <Font name="System Bold Italic" size="14.0" />
             </font>
          </Label>
-         <Slider fx:id="homeVolumeSlider" layoutX="170.0" layoutY="287.0" prefHeight="14.0" prefWidth="114.0" />
+         <Slider fx:id="homeVolumeSlider" layoutX="170.0" layoutY="287.0" prefHeight="14.0" prefWidth="114.0" style="-fx-background-color: #ffae46; -fx-opacity: 0.5;" />
       </children>
    </Pane>
    <Pane layoutX="217.0" layoutY="443.0" prefHeight="157.0" prefWidth="681.0" style="-fx-background-color: #ffae46;">

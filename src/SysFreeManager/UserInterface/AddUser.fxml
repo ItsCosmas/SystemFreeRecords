@@ -90,17 +90,7 @@
       </Label>
       <ImageView fx:id="profilePicture" fitHeight="220.0" fitWidth="250.0" layoutX="394.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="394.0" layoutY="36.0" text="Selected Photo" />
-      <Label fx:id="lblAddError" layoutX="42.0" layoutY="404.0" prefHeight="17.0" prefWidth="498.0" textFill="RED">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblAddSuccess" layoutX="35.0" layoutY="409.0" prefHeight="17.0" prefWidth="455.0" textFill="GREEN">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-   </Pane>
+     </Pane>
    <Label layoutX="223.0" layoutY="14.0" text="Enter details of the new User Here">
       <font>
          <Font name="System Bold" size="15.0" />

@@ -11,9 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/SysFreeManager/BackEnd/AddUser.java" afterPath="$PROJECT_DIR$/src/SysFreeManager/BackEnd/AddUser.java" />
       <change beforePath="$PROJECT_DIR$/src/SysFreeManager/BackEnd/Home.java" afterPath="$PROJECT_DIR$/src/SysFreeManager/BackEnd/Home.java" />
-      <change beforePath="$PROJECT_DIR$/src/SysFreeManager/UserInterface/Home.fxml" afterPath="$PROJECT_DIR$/src/SysFreeManager/UserInterface/Home.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,7 +89,7 @@
       <file leaf-file-name="AddUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/AddUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="0">
               <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,17 +103,17 @@
       <file leaf-file-name="Home.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="135" column="8" lean-forward="false" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+            <state relative-caret-position="105">
+              <caret line="247" column="43" lean-forward="true" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
               <folding>
-                <element signature="e#0#8826#0" expanded="true" />
+                <element signature="e#0#8746#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#6274#6275#0" expanded="true" />
-                <element signature="e#6308#6309#0" expanded="true" />
-                <element signature="e#6345#6346#0" expanded="true" />
-                <element signature="e#6380#6381#0" expanded="true" />
-                <element signature="e#6415#6416#0" expanded="true" />
-                <element signature="e#6449#6450#0" expanded="true" />
+                <element signature="e#6266#6267#0" expanded="true" />
+                <element signature="e#6300#6301#0" expanded="true" />
+                <element signature="e#6337#6338#0" expanded="true" />
+                <element signature="e#6372#6373#0" expanded="true" />
+                <element signature="e#6407#6408#0" expanded="true" />
+                <element signature="e#6441#6442#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -584,7 +582,7 @@
       <workItem from="1524980042964" duration="4263000" />
       <workItem from="1524985231463" duration="978000" />
       <workItem from="1525024761499" duration="343000" />
-      <workItem from="1525075596213" duration="957000" />
+      <workItem from="1525075596213" duration="1417000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the sample folder to SysFreeManager">
       <created>1522352907556</created>
@@ -775,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524983621417</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Edited the regex extracting the Media Tittle part from media path">
+      <created>1525076610658</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1525076610658</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204471000" />
+    <option name="totallyTimeSpent" value="204931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,7 +862,8 @@
     <MESSAGE value="Added a Switch Scenes Class to handle code repetition in each controller&#10;Started using Lambda expressions&#10;Added Alerts and Dialogs to register admin&#10;Replaced label to hyperlink as link to register admin from the log in Screen&#10;&#10;Added Volume Slider to MediaPlayer&#10;&#10;Fixed Media Title extraction from Media Url" />
     <MESSAGE value="Optimized FXML for Login UI" />
     <MESSAGE value="Retrieved image from database and set it on ImageView in Home." />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieved image from database and set it on ImageView in Home." />
+    <MESSAGE value="Edited the regex extracting the Media Tittle part from media path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited the regex extracting the Media Tittle part from media path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,7 +1204,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/AddUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="0">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1206,11 +1212,6 @@
             <marker date="1524983721360" expanded="true" signature="4925:5106" ph="INSERT INTO systemfreedb.employee... " />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPicture.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/LoginController.java">
@@ -1223,19 +1224,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/adminPicture.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SysFreeManager/BackEnd/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="135" column="8" lean-forward="false" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="247" column="43" lean-forward="true" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
           <folding>
-            <element signature="e#0#8826#0" expanded="true" />
+            <element signature="e#0#8746#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#6274#6275#0" expanded="true" />
-            <element signature="e#6308#6309#0" expanded="true" />
-            <element signature="e#6345#6346#0" expanded="true" />
-            <element signature="e#6380#6381#0" expanded="true" />
-            <element signature="e#6415#6416#0" expanded="true" />
-            <element signature="e#6449#6450#0" expanded="true" />
+            <element signature="e#6266#6267#0" expanded="true" />
+            <element signature="e#6300#6301#0" expanded="true" />
+            <element signature="e#6337#6338#0" expanded="true" />
+            <element signature="e#6372#6373#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#6441#6442#0" expanded="true" />
           </folding>
         </state>
       </provider>

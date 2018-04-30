@@ -63,8 +63,8 @@ public class Home implements Initializable {
     private MediaPlayer mediaPlayer;
 
 
-      //private String MEDIA_URL = new File("D:\\Music Videos\\Rock\\M83 'Midnight City' Official video - YouTube.MP4").getAbsolutePath();
-      private String MEDIA_URL = new File("D:\\Tutorials\\Stuff\\What Can You Do With Python – Computer Programming (Guide) - YouTube.mp4").getAbsolutePath();
+      private String MEDIA_URL = new File("D:\\Music Videos\\Rock\\M83 'Midnight City' Official video - YouTube.MP4").getAbsolutePath();
+      //private String MEDIA_URL = new File("D:\\Tutorials\\Stuff\\What Can You Do With Python – Computer Programming (Guide) - YouTube.mp4").getAbsolutePath();
       //private String MEDIA_URL = new File("D:\\Music Videos\\Pop\\The+Lion+King+-+Hakuna+Matata+(HD).mp4").getAbsolutePath();
       //private String MEDIA_URL = new File("D:\\Videos\\(20) 4K Ultra HD Video - Awesome Captain's View - YouTube.mkv").getAbsolutePath();
       //private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
@@ -244,12 +244,12 @@ public class Home implements Initializable {
 
                 //System.out.println(myResultSet.getString("firstName"));
                 lblUsername.setText(myResultSet.getString("firstName"));
-                //adminPicHome.setImage(Image.impl_fromPlatformImage(myResultSet.getBinaryStream("adminPic")));
 
+                // Extracting Image from DB
                 InputStream inputStream = myResultSet.getBinaryStream("adminPic");
                 OutputStream outputStream = new FileOutputStream(new File("adminPicture.jpg"));
                 byte [] content = new byte[1024];
-                int size = 0;
+                int size;
 
                 while ((size = inputStream.read(content)) != -1){
                         outputStream.write(content, 0, size);

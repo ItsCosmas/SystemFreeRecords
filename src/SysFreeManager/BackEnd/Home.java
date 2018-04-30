@@ -63,7 +63,12 @@ public class Home implements Initializable {
     private MediaPlayer mediaPlayer;
 
 
-     private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+      //private String MEDIA_URL = new File("D:\\Music Videos\\Rock\\M83 'Midnight City' Official video - YouTube.MP4").getAbsolutePath();
+      private String MEDIA_URL = new File("D:\\Tutorials\\Stuff\\What Can You Do With Python – Computer Programming (Guide) - YouTube.mp4").getAbsolutePath();
+      //private String MEDIA_URL = new File("D:\\Music Videos\\Pop\\The+Lion+King+-+Hakuna+Matata+(HD).mp4").getAbsolutePath();
+      //private String MEDIA_URL = new File("D:\\Videos\\(20) 4K Ultra HD Video - Awesome Captain's View - YouTube.mkv").getAbsolutePath();
+      //private String MEDIA_URL = new File("src/SysFreeManager/Videos/OneRepublic - Kids.MP4").getAbsolutePath();
+      //private String MEDIA_URL = new File("D:\\Videos\\Silicon Valley Season 5 Official Teaser (2018) - HBO.MP4").getAbsolutePath();
       //private String MEDIA_URL = new File("C:\\Users\\user\\Videos\\eminemagain.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/Los Lobos - La Bamba.MP4").getAbsolutePath();
       //String MEDIA_URL = new File("src/SysFreeManager/Videos/---OneRepublic - All The Right Moves.MKV").getAbsolutePath();
@@ -129,10 +134,7 @@ public class Home implements Initializable {
 
         // The regex below only extracts the Tittle part of the media
 
-        String [] mediaTitleParts = MEDIA_URL.split(":");
-        String mediaTitleSecondPart = mediaTitleParts [1];
-        //System.out.println(mediaTitleSecondPart);
-        String [] MediaTitlePartsMain = mediaTitleSecondPart.split("\\\\");
+        String [] MediaTitlePartsMain = MEDIA_URL.split("\\\\");
         //Extract the Title part which usually the last String after split
         String MediaTitle = MediaTitlePartsMain [MediaTitlePartsMain.length - 1];
         //System.out.println(MediaTitle);

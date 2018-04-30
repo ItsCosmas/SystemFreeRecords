@@ -27,6 +27,7 @@ import java.util.ResourceBundle;
 public class AddUser implements Initializable {
 
     private SceneSwitches sceneSwitches = new SceneSwitches();
+    //private  Home home = new Home();
 
 
     private File file;
@@ -83,8 +84,7 @@ public class AddUser implements Initializable {
         btnGoHome.setOnAction(event -> {
             try {
                 sceneSwitches.goToHome(event);
-                Home home = new Home();
-                home.getAdminDetails();
+                //home.getAdminDetails();
 
             }catch (Exception e){
                 System.out.println("An Error Occurred");

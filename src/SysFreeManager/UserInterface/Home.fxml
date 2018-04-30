@@ -34,7 +34,7 @@
                     <Font name="System Bold" size="18.0" />
                 </font>
             </Label>
-         <Label layoutX="11.0" layoutY="569.0" text=" ©2018 cozytheDev" />
+         <Label layoutX="11.0" layoutY="569.0" text=" ©2018 cosmastheDev" />
         </AnchorPane>
     </Pane>
    <Pane layoutX="214.0" prefHeight="90.0" prefWidth="687.0" style="-fx-background-color: #283747;">
@@ -102,14 +102,9 @@
                <Image url="@../images/ic_refresh_black_24dp.png" />
             </image>
          </ImageView>
-         <Label fx:id="lblMediaTitle" layoutX="68.0" layoutY="320.0" text="This is the Media Tittle">
+         <Label fx:id="lblMediaTitle" layoutX="18.0" layoutY="319.0" text="This is the Media Tittle">
             <font>
                <Font name="System Bold Italic" size="12.0" />
-            </font>
-         </Label>
-         <Label layoutX="28.0" layoutY="318.0" text="Title:">
-            <font>
-               <Font name="System Bold Italic" size="14.0" />
             </font>
          </Label>
          <Slider fx:id="homeVolumeSlider" layoutX="170.0" layoutY="287.0" prefHeight="14.0" prefWidth="114.0" style="-fx-background-color: #ffae46; -fx-opacity: 0.5;" />

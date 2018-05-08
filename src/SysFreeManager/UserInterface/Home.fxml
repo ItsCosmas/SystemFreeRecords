@@ -41,9 +41,8 @@
       <children>
          <ImageView id="imguserPic" fx:id="adminPicHome" fitHeight="76.0" fitWidth="65.0" layoutX="426.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
             <image>
-               <Image url="@../images/ic_insert_emoticon_black_36dp.png" />
-            </image>
-         </ImageView>
+               <Image url="@../images/img_316131.png" />
+            </image></ImageView>
          <Label id="lbluserName" fx:id="lblUsername" layoutX="506.0" layoutY="44.0" text="User" textFill="WHITE" />
          <Button id="btnlogOut" fx:id="btnLogout" layoutX="607.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: #5DADE2;" text="Log Out" />
          <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="624.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">

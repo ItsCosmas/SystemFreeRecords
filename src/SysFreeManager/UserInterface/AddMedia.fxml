@@ -4,6 +4,7 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -58,22 +59,22 @@
             <Label layoutX="38.0" layoutY="82.0" prefHeight="17.0" prefWidth="82.0" text="Senders Phone" />
             <TextField layoutX="217.0" layoutY="78.0" prefHeight="25.0" prefWidth="182.0" />
             <TextField layoutX="130.0" layoutY="25.0" prefHeight="25.0" prefWidth="267.0" />
-            <Label layoutX="38.0" layoutY="216.0" text="Media Description" />
-            <TextArea layoutX="37.0" layoutY="250.0" prefHeight="101.0" prefWidth="411.0" />
-            <CheckBox layoutX="42.0" layoutY="361.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="214.0" text="This is Exclusive content">
+            <Label layoutX="36.0" layoutY="259.0" text="Media Description" />
+            <TextArea layoutX="35.0" layoutY="293.0" prefHeight="101.0" prefWidth="411.0" />
+            <CheckBox layoutX="40.0" layoutY="404.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="214.0" text="This is Exclusive content">
                <font>
                   <Font size="14.0" />
                </font></CheckBox>
-            <Label layoutX="49.0" layoutY="408.0" text="Price of this media item in KSH" />
-            <TextField layoutX="37.0" layoutY="436.0" prefHeight="33.0" prefWidth="411.0" />
-            <Button layoutX="37.0" layoutY="502.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Submit" />
-            <Button layoutX="571.0" layoutY="502.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Clear" />
+            <Label layoutX="47.0" layoutY="451.0" text="Price of this media item in KSH" />
+            <TextField layoutX="35.0" layoutY="479.0" prefHeight="33.0" prefWidth="411.0" />
+            <Button layoutX="35.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Submit" />
+            <Button layoutX="569.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Clear" />
             <CheckBox layoutX="38.0" layoutY="168.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="253.0" text="This Media Item has been featured">
                <font>
                   <Font size="14.0" />
                </font></CheckBox>
-            <Button layoutX="287.0" layoutY="502.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Update" />
-            <Button layoutX="125.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" text="Choose Media" />
+            <Button layoutX="285.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #5DADE2;" text="Update" />
+            <Button layoutX="125.0" layoutY="127.0" mnemonicParsing="false" onAction="#openMediaFile" prefHeight="25.0" prefWidth="169.0" text="Choose Media" />
             <Label layoutX="35.0" layoutY="131.0" text="Attach  Media" />
             <ComboBox layoutX="134.0" layoutY="78.0" prefHeight="25.0" prefWidth="74.0" promptText="+254" />
             <Label layoutX="33.0" layoutY="402.0" prefHeight="21.0" prefWidth="14.0" text="*" textFill="RED">
@@ -81,8 +82,10 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <MediaView fitHeight="200.0" fitWidth="250.0" layoutX="422.0" layoutY="31.0" />
-            <Label layoutX="422.0" layoutY="17.0" text="Selected Media" />
+            <Label layoutX="422.0" layoutY="10.0" text="Selected Media">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <Label layoutX="24.0" layoutY="18.0" prefHeight="21.0" prefWidth="14.0" text="*" textFill="RED">
                <font>
                   <Font size="20.0" />
@@ -98,6 +101,33 @@
                   <Font size="20.0" />
                </font>
             </Label>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="491.0" layoutY="231.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_pause_circle_outline_black_24dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="231.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_play_circle_outline_black_24dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="520.0" layoutY="231.0" onMouseClicked="#stop" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_stop_black_24dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="435.0" layoutY="231.0" onMouseClicked="#restart" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_refresh_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblMediaTitle" layoutX="419.0" layoutY="268.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Slider fx:id="theVolumeSlider" layoutX="551.0" layoutY="234.0" prefHeight="14.0" prefWidth="114.0" style="-fx-background-color: #ffae46; -fx-opacity: 0.5;" />
+            <MediaView fx:id="theMediaView" fitHeight="200.0" fitWidth="250.0" layoutX="420.0" layoutY="31.0" preserveRatio="false" />
          </children>
       </Pane>
       <Label layoutX="219.0" layoutY="12.0" text="Enter Media Details Here">

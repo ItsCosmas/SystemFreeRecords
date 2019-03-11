@@ -9,7 +9,7 @@ public class MySQLConnection {
 
         String dburl = "jdbc:mysql://localhost:3306/systemfreedb" ;
         String username = "root" ;
-        String password =  "punkh1gh*Er" ;
+        String password =  "your_DB_password" ;
 
         try {
 
